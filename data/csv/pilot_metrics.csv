@@ -1,0 +1,14 @@
+Evaluation Metrics — Formula-Driven Summary,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Dataset Statistic,Value,Definition,,,,,,,,,,,,
+Source count,30,Frozen source records,,,,,,,,,,,,
+Question count,30,All benchmark questions,,,,,,,,,,,,
+Answerable questions,25,Has at least one gold source,,,,,,,,,,,,
+Unanswerable questions,5,Expected abstention,,,,,,,,,,,,
+Graph nodes,431,Frozen prototype subset,,,,,,,,,,,,
+Graph edges,500,Includes derived candidate edges,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Method,TP,FP,FN,TN,Precision,Recall,F1,Negative Abstention,Avg Latency (ms),,Method,Precision,Recall,F1
+Keyword-IDF@3,29,61,1,809,0.32222222222222224,0.9666666666666667,0.4833333333333334,0,0.027042933318928892,,Keyword-IDF@3,0.32222222222222224,0.9666666666666667,0.4833333333333334
+TF-IDF Vector@3,30,60,0,810,0.3333333333333333,1,0.5,0,0.3700507000000168,,TF-IDF Vector@3,0.3333333333333333,1,0.5
+Graph Entity@3,30,28,0,842,0.5172413793103449,1,0.6818181818181819,0.4,0.522410400018695,,Graph Entity@3,0.5172413793103449,1,0.6818181818181819

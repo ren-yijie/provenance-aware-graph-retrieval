@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">Zero-Knowledge Network Discovery for AI Systems</title>
+  <desc id="desc">Portfolio banner showing an evidence-first network pipeline and four benchmark statistics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#13251f"/>
+      <stop offset="1" stop-color="#274d3f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.32" r="0.65">
+      <stop offset="0" stop-color="#8ec5ad" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8ec5ad" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#07110d" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="520" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="520" rx="28" fill="url(#glow)"/>
+  <g opacity="0.2" stroke="#b9ddcb" stroke-width="1">
+    <path d="M805 54L936 112L1067 74L1188 160L1098 265L1222 354L1110 463"/>
+    <path d="M936 112L912 238L1098 265L1012 380L1110 463"/>
+    <path d="M805 54L776 196L912 238L850 350L1012 380"/>
+  </g>
+  <g fill="#b9ddcb">
+    <circle cx="805" cy="54" r="6"/><circle cx="936" cy="112" r="8"/>
+    <circle cx="1067" cy="74" r="5"/><circle cx="1188" cy="160" r="7"/>
+    <circle cx="776" cy="196" r="5"/><circle cx="912" cy="238" r="10"/>
+    <circle cx="1098" cy="265" r="7"/><circle cx="1222" cy="354" r="5"/>
+    <circle cx="850" cy="350" r="6"/><circle cx="1012" cy="380" r="9"/>
+    <circle cx="1110" cy="463" r="6"/>
+  </g>
+  <text x="72" y="78" fill="#9fc4b3" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">UW MSIM PRACTICUM · 2026</text>
+  <text x="72" y="150" fill="#ffffff" font-family="Arial, sans-serif" font-size="52" font-weight="700">Zero-Knowledge</text>
+  <text x="72" y="211" fill="#ffffff" font-family="Arial, sans-serif" font-size="52" font-weight="700">Network Discovery</text>
+  <text x="72" y="256" fill="#d9e8e0" font-family="Arial, sans-serif" font-size="24">Evidence-first retrieval for trustworthy AI systems</text>
+  <g transform="translate(72 323)" filter="url(#shadow)">
+    <g>
+      <rect width="220" height="116" rx="14" fill="#f5f2e9"/>
+      <text x="22" y="48" fill="#1b3329" font-family="Arial, sans-serif" font-size="34" font-weight="700">50</text>
+      <text x="22" y="80" fill="#51665d" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">FROZEN PROFILES</text>
+    </g>
+    <g transform="translate(238)">
+      <rect width="220" height="116" rx="14" fill="#f5f2e9"/>
+      <text x="22" y="48" fill="#1b3329" font-family="Arial, sans-serif" font-size="34" font-weight="700">118</text>
+      <text x="22" y="80" fill="#51665d" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">GRAPH NODES</text>
+    </g>
+    <g transform="translate(476)">
+      <rect width="220" height="116" rx="14" fill="#f5f2e9"/>
+      <text x="22" y="48" fill="#1b3329" font-family="Arial, sans-serif" font-size="34" font-weight="700">30</text>
+      <text x="22" y="80" fill="#51665d" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">FIXED QUESTIONS</text>
+    </g>
+    <g transform="translate(714)">
+      <rect width="220" height="116" rx="14" fill="#f5f2e9"/>
+      <text x="22" y="48" fill="#1b3329" font-family="Arial, sans-serif" font-size="34" font-weight="700">4</text>
+      <text x="22" y="80" fill="#51665d" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">RETRIEVAL METHODS</text>
+    </g>
+  </g>
+</svg>

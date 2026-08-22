@@ -1,0 +1,8 @@
+Metrics Summary,,,,,,,,,,,,
+Metrics remain blank until valid COMPLETE rows exist. Only rows with Row_QC = OK are included.,,,,,,,,,,,,
+,,,,,,,,,,,,
+Method,Completed,TP,FP,FN,Micro_Precision,Micro_Recall,Micro_F1,Abstention_Rate,Abstention_Accuracy,Avg_Latency_ms,Total_API_Cost_USD,QC_Warnings
+Keyword Search,0,,,,,,,,,,,0
+Vector RAG,0,,,,,,,,,,,0
+Unweighted Graph Retrieval,0,,,,,,,,,,,0
+Provenance-aware Graph Retrieval,0,,,,,,,,,,,0

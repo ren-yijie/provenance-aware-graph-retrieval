@@ -1,0 +1,80 @@
+{
+  "generatedFrom": [
+    "Practicum_30_Source_Evaluation_Dataset.xlsx",
+    "Practicum_50_Source_Evaluation_Matrix.xlsx"
+  ],
+  "files": [
+    {
+      "sheet": "Sources",
+      "filename": "pilot_sources.csv",
+      "rows": 31,
+      "columns": 8
+    },
+    {
+      "sheet": "Questions",
+      "filename": "pilot_questions.csv",
+      "rows": 31,
+      "columns": 9
+    },
+    {
+      "sheet": "Baseline Predictions",
+      "filename": "pilot_predictions.csv",
+      "rows": 239,
+      "columns": 9
+    },
+    {
+      "sheet": "Query Metrics",
+      "filename": "pilot_query_metrics.csv",
+      "rows": 91,
+      "columns": 12
+    },
+    {
+      "sheet": "Metrics",
+      "filename": "pilot_metrics.csv",
+      "rows": 14,
+      "columns": 15
+    },
+    {
+      "sheet": "Relation Labels",
+      "filename": "pilot_relation_labels.csv",
+      "rows": 34,
+      "columns": 12
+    },
+    {
+      "sheet": "Data Quality",
+      "filename": "pilot_data_quality.csv",
+      "rows": 16,
+      "columns": 4
+    },
+    {
+      "sheet": "Source Index",
+      "filename": "source_index.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "sheet": "Question Gold",
+      "filename": "question_gold.csv",
+      "rows": 34,
+      "columns": 11
+    },
+    {
+      "sheet": "Method Outputs",
+      "filename": "method_outputs.csv",
+      "rows": 124,
+      "columns": 24
+    },
+    {
+      "sheet": "Metrics Summary",
+      "filename": "metrics_summary.csv",
+      "rows": 8,
+      "columns": 13
+    },
+    {
+      "sheet": "Entity Collisions",
+      "filename": "entity_collisions.csv",
+      "rows": 10,
+      "columns": 11
+    }
+  ]
+}

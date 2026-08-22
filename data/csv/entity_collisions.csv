@@ -1,0 +1,10 @@
+Entity Collision Cases,,,,,,,,,,
+"Six pairwise negative cases created by exact-name collisions. If donor_id is the identity ground truth, the current graph merge is a false positive.",,,,,,,,,,
+,,,,,,,,,,
+Case_ID,Shared_Name,Source_A,Donor_A,Source_B,Donor_B,Gold_Same_Person,Shared_Discovered_Entity_ID,Current_Graph_Merged,Gold_Outcome,Rationale
+EC01,Tariq Al-Rashid,SRC_68ed2f97e7a248d694f231d451831c04,D0215,SRC_0441dc10f8e34937bdcfda1a68b4d7c2,D0566,false,DISC_32b05fa17f9f4fb0b89dc85ebb4c8a36,true,False Positive,Distinct donor_id values and materially different profile attributes; the shared name alone should not prove identity.
+EC02,Tariq Al-Rashid,SRC_68ed2f97e7a248d694f231d451831c04,D0215,SRC_7ec60d6b0cec447fa0ee0dbbf6fb386f,D0905,false,DISC_32b05fa17f9f4fb0b89dc85ebb4c8a36,true,False Positive,Distinct donor_id values and materially different profile attributes; the shared name alone should not prove identity.
+EC03,Tariq Al-Rashid,SRC_0441dc10f8e34937bdcfda1a68b4d7c2,D0566,SRC_7ec60d6b0cec447fa0ee0dbbf6fb386f,D0905,false,DISC_32b05fa17f9f4fb0b89dc85ebb4c8a36,true,False Positive,Distinct donor_id values and materially different profile attributes; the shared name alone should not prove identity.
+EC04,Sophia Andreou,SRC_b159124a50e14ab3b5f92aabb61fdf89,D0442,SRC_41567911c8b045bd8dd0e55e8e69a06b,D0583,false,DISC_56fca8c2fec34d179f314390fee379fc,true,False Positive,Distinct donor_id values and materially different profile attributes; the shared name alone should not prove identity.
+EC05,Vikram Nair,SRC_e724d27deb20445695164b8765b80b63,D0476,SRC_7d71e393a7e045b99266d9b05b499cb3,D0801,false,DISC_89524684b3234c2e8e7f4a111228acec,true,False Positive,Distinct donor_id values and materially different profile attributes; the shared name alone should not prove identity.
+EC06,Andre Beaumont,SRC_fe56228c8f38461b96964e6e5303294b,D0553,SRC_9f81162e8a1f428a9ea29c0188dca111,D0892,false,DISC_76c91770a17941ef923c01022313ad05,true,False Positive,Distinct donor_id values and materially different profile attributes; the shared name alone should not prove identity.

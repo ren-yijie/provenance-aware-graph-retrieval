@@ -8,6 +8,8 @@
 
 A reproducible methodology for deciding which automatically discovered graph relationships should be allowed to influence an AI system.
 
+> **Synthetic data notice:** Every donor profile in this repository is a fully synthetic test fixture and does not describe a real person. Names, ages, locations, employment histories, wealth and giving indicators, and cultivation notes are fictional and are included only to make the benchmark reproducible. Phone numbers and email addresses have been removed from the public package.
+
 This repository is the public portfolio version of a University of Washington MSIM practicum completed by a four-person team with LumIntelligence. It is organized for two audiences: a concise decision story for product and strategy reviewers, with auditable data and scripts for technical reviewers.
 
 ## Why this project matters

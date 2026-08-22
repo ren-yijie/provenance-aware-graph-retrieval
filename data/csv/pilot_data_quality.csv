@@ -1,0 +1,16 @@
+Data Quality and Sampling Checks,,,
+,,,
+Check,Result,Status,Why It Matters
+Original Source node count,1000,PASS,Matches graph profile.
+Original graph node count,37688,PASS,Profiled from graph.json.
+Original graph edge count,75290,PASS,Profiled from graph.json.
+Duplicate-name groups in original sources,80,WARNING,Ambiguous names can inflate relationship matches; excluded from labeled sampling.
+Selected source count,30,PASS,Within requested 20–50 range.
+Selected duplicate source IDs,0,PASS,Expected 0.
+Selected globally ambiguous names,0,PASS,Expected 0.
+Tier balance,10 annual / 10 mid / 10 major,PASS,Presentation-friendly stratification.
+Relationship-manager balance,6 per manager,PASS,Five managers represented equally.
+Question count,30,PASS,20 single-source + 5 relationship + 5 unanswerable.
+Sample graph node count,431,PASS,Prototype target: 200–500 nodes.
+Sample graph edge count,500,PASS,"Prototype target: 500–1,000 edges."
+Contact fields included,0,PASS,Phone and email omitted from the subset.

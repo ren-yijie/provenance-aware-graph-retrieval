@@ -1,0 +1,34 @@
+Relationship Candidate Labels — Enter Your Prototype Prediction,,,,,,,,,,,
+"Prediction: enter 1 for related, 0 for not related. Outcome updates automatically.",,,,,,,,,,,
+,,,,,,,,,,,
+Pair ID,Donor A,Name A,Donor B,Name B,Gold Label,Label Definition,Evidence,Shared Entity Count,Prototype Prediction,Outcome,Review Status
+R01,D001,Margaret Thornton,D002,David Chen,1,Explicit donor-to-donor relationship stated in source text,Margaret Thornton is David Chen's senior colleague at Thornton & Lewis LLP and introduced him to the museum.,3,,,Gold label frozen
+R02,D003,Patricia Kellner,D004,Robert Kellner,1,Explicit donor-to-donor relationship stated in source text,Patricia and Robert Kellner are married; both are museum donors.,2,,,Gold label frozen
+R03,D0085,Tanisha Brooks,D0098,Devon St. Claire,1,Explicit donor-to-donor relationship stated in source text,Tanisha Brooks introduced Devon St. Claire to the museum at an ICP event.,2,,,Gold label frozen
+R04,D0619,Margaret Chen,D0629,Priya Chandrasekaran,1,Explicit donor-to-donor relationship stated in source text,Priya Chandrasekaran attended the museum's photography benefit as Margaret Chen's guest.,1,,,Gold label frozen
+R05,D0627,Isabel Ferreira,D0651,Neha Patel,1,Explicit donor-to-donor relationship stated in source text,Neha Patel attended a young patron event as Isabel Ferreira's guest.,2,,,Gold label frozen
+R06,D0383,Ben Shapiro-Levi,D0956,Svetlana Volkov-Reiss,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,3,,,Gold label frozen
+R07,D0392,Miriam Goldstein-Levy,D0904,Eleanor Whitfield-Cross,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,3,,,Gold label frozen
+R08,D003,Patricia Kellner,D0907,David Okonkwo,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R09,D0057,Roland Jeffers,D0458,Ifeoma Chukwuemeka,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R10,D0097,Constance Ellory,D0602,Viktor Breckenridge,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R11,D0117,Miriam Goldstein-Farber,D0619,Margaret Chen,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R12,D0374,Sophie Marchetti,D0673,Sunita Bhattacharya,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R13,D0629,Priya Chandrasekaran,D0651,Neha Patel,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R14,D0064,Oliver Ashford,D0117,Miriam Goldstein-Farber,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R15,D0064,Oliver Ashford,D0392,Miriam Goldstein-Levy,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R16,D0117,Miriam Goldstein-Farber,D0392,Miriam Goldstein-Levy,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R17,D0392,Miriam Goldstein-Levy,D0619,Margaret Chen,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R18,D0270,Eleanor Strand,D0392,Miriam Goldstein-Levy,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,2,,,Gold label frozen
+R19,D002,David Chen,D0204,Catherine Osei-Bonsu,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R20,D004,Robert Kellner,D0270,Eleanor Strand,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R21,D0057,Roland Jeffers,D0956,Svetlana Volkov-Reiss,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R22,D0095,Celeste Fontaine-Ward,D0097,Constance Ellory,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R23,D0374,Sophie Marchetti,D0956,Svetlana Volkov-Reiss,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R24,D0383,Ben Shapiro-Levi,D0907,David Okonkwo,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R25,D0673,Sunita Bhattacharya,D0956,Svetlana Volkov-Reiss,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R26,D002,David Chen,D0098,Devon St. Claire,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R27,D002,David Chen,D0458,Ifeoma Chukwuemeka,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R28,D003,Patricia Kellner,D0057,Roland Jeffers,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R29,D003,Patricia Kellner,D0392,Miriam Goldstein-Levy,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
+R30,D003,Patricia Kellner,D0904,Eleanor Whitfield-Cross,0,No explicit donor-to-donor relationship stated in either source text,Hard negative selected from high graph-similarity pairs.,1,,,Gold label frozen
