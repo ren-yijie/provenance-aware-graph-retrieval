@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">Graph precision–recall trade-off</title>
+  <desc id="chart-desc">The provenance-aware point has higher precision and lower recall than the unweighted graph point.</desc>
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #172033; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+  </style>
+  <text x="92" y="40" font-size="24" font-weight="700">Graph precision–recall trade-off</text>
+  <text x="92" y="67" font-size="14" fill="#5B6474">Provenance filtering raised precision and lowered recall</text>
+  <line x1="92.0" y1="100" x2="92.0" y2="438" stroke="#D8DEE8"/>
+  <text class="mono" x="92.0" y="462" text-anchor="middle" font-size="12">20%</text>
+  <line x1="258.5" y1="100" x2="258.5" y2="438" stroke="#D8DEE8"/>
+  <text class="mono" x="258.5" y="462" text-anchor="middle" font-size="12">25%</text>
+  <line x1="425.0" y1="100" x2="425.0" y2="438" stroke="#D8DEE8"/>
+  <text class="mono" x="425.0" y="462" text-anchor="middle" font-size="12">30%</text>
+  <line x1="591.5" y1="100" x2="591.5" y2="438" stroke="#D8DEE8"/>
+  <text class="mono" x="591.5" y="462" text-anchor="middle" font-size="12">35%</text>
+  <line x1="758.0" y1="100" x2="758.0" y2="438" stroke="#D8DEE8"/>
+  <text class="mono" x="758.0" y="462" text-anchor="middle" font-size="12">40%</text>
+  <line x1="92" y1="438.0" x2="758" y2="438.0" stroke="#D8DEE8"/>
+  <text class="mono" x="80" y="443.0" text-anchor="end" font-size="12">40%</text>
+  <line x1="92" y1="370.4" x2="758" y2="370.4" stroke="#D8DEE8"/>
+  <text class="mono" x="80" y="375.4" text-anchor="end" font-size="12">45%</text>
+  <line x1="92" y1="302.8" x2="758" y2="302.8" stroke="#D8DEE8"/>
+  <text class="mono" x="80" y="307.8" text-anchor="end" font-size="12">50%</text>
+  <line x1="92" y1="235.2" x2="758" y2="235.2" stroke="#D8DEE8"/>
+  <text class="mono" x="80" y="240.2" text-anchor="end" font-size="12">55%</text>
+  <line x1="92" y1="167.6" x2="758" y2="167.6" stroke="#D8DEE8"/>
+  <text class="mono" x="80" y="172.6" text-anchor="end" font-size="12">60%</text>
+  <line x1="92" y1="100.0" x2="758" y2="100.0" stroke="#D8DEE8"/>
+  <text class="mono" x="80" y="105.0" text-anchor="end" font-size="12">65%</text>
+  <line x1="516.9" y1="336.6" x2="402.0" y2="212.7" stroke="#5B6474" stroke-width="2" stroke-dasharray="6 5"/>
+  <circle cx="516.9" cy="336.6" r="9" fill="#FFFFFF" stroke="#2563EB" stroke-width="4"/>
+  <text x="531.9" y="341.6" font-size="13" font-weight="600">Unweighted (47.5% P, 32.8% R)</text>
+  <rect x="394.0" y="204.7" width="16" height="16" fill="#D97706" stroke="#172033" stroke-width="1"/>
+  <text x="417.0" y="217.7" font-size="13" font-weight="600">Provenance-aware (56.7% P, 29.3% R)</text>
+  <line x1="92" y1="100" x2="92" y2="438" stroke="#172033"/>
+  <line x1="92" y1="438" x2="758" y2="438" stroke="#172033"/>
+  <text x="425.0" y="492" text-anchor="middle" font-size="13">Recall</text>
+  <text x="24" y="269.0" text-anchor="middle" font-size="13" transform="rotate(-90 24 269.0)">Precision</text>
+</svg>

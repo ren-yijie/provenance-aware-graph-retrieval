@@ -1,104 +1,140 @@
-<div align="center">
-  <img src="assets/portfolio-banner.svg" alt="Zero-Knowledge Network Discovery for AI Systems" width="100%">
-</div>
+# Provenance-Aware Graph Retrieval
 
-# Zero-Knowledge Network Discovery for AI Systems
+## 1. Project problem
 
-**An Evidence-First Benchmark for Trustworthy AI Retrieval**
+Retrieval systems can surface plausible records without establishing whether a graph path is supported by the source profile, whether two similar names refer to the same person, or whether a generic concept created a weak connection. This project asks a narrow, auditable question: how do lexical, dense-vector, unweighted-graph, and provenance-filtered graph retrieval compare when every result must resolve to a ranked Source ID?
 
-A reproducible methodology for deciding which automatically discovered graph relationships should be allowed to influence an AI system.
+## 2. What was implemented
 
-> **Synthetic data notice:** Every donor profile in this repository is a fully synthetic test fixture and does not describe a real person. Names, ages, locations, employment histories, wealth and giving indicators, and cultivation notes are fictional and are included only to make the benchmark reproducible. Phone numbers and email addresses have been removed from the public package.
+Package B is a deterministic, locally executable retrieval benchmark with one shared Top-3 contract:
 
-This repository is the public portfolio version of a University of Washington MSIM practicum completed by a four-person team with LumIntelligence. It is organized for two audiences: a concise decision story for product and strategy reviewers, with auditable data and scripts for technical reviewers.
+- Okapi BM25 lexical retrieval (`bm25_v1`);
+- MiniLM dense retrieval (`minilm_vector_v1`), representing the retrieval stage of a Vector RAG pipeline—not a complete RAG system;
+- deterministic breadth-first unweighted graph retrieval (`unweighted_graph_v1`);
+- deterministic graph retrieval with source-evidence, generic-concept, and identity-collision filtering (`provenance_graph_v1`).
 
-## Why this project matters
+Shared loaders, schemas, metrics, retrieval text, cache handling, provenance traces, and a 22-test regression suite make the comparison inspectable and reproducible.
 
-Retrieval can find relevant text without resolving whether two names represent the same person, whether a graph edge is supported by direct evidence, or whether a broad semantic hub is creating plausible but weak paths. The project therefore treats hallucination partly as an information-organization problem and separates:
+## 3. Dataset disclosure
 
-- source evidence from inferred relationships;
-- canonical identity from display names;
-- retrieval behavior from generated language;
-- completed results from proposed system features.
+All 50 Source profiles are synthetic test fixtures. They do not describe real people or production users. The frozen benchmark contains 118 nodes, 116 directed edges, 30 fixed questions, 58 gold Source-ID assignments, 25 answerable questions, and five empty-gold abstention questions.
 
-## Portfolio at a glance
+The authoritative executable-v1 fingerprints for `data/test_graph_slice.json` are:
 
-| Deliverable | Scope | Status |
-|---|---:|---|
-| Completed pilot | 30 synthetic profiles, 30 questions, 3 baselines | Recomputed and documented |
-| Frozen graph slice | 50 synthetic profiles, 118 nodes, 116 edges | Hash-verified and structurally audited |
-| Final evaluation matrix | 30 questions × 4 methods = 120 rows | Ready; all outputs `NOT_RUN` |
-| Interactive prototype | Four-stage network and evidence view | Included in `demo/` |
-| Confidence-aware retrieval | Transparent scoring and threshold design | Proposed, not calibrated |
+- raw SHA-256: `bd6c8802a864b4599c064d34c01a5d8b460cb4f040bd8339f745bef8dcf61ad5`;
+- canonical JSON SHA-256: `cfa22f31d1d0186f6f54119c5be0597f88b94c6fa4a1db8c39cef4c975c7f498`.
 
-## Verified pilot finding
+An older documented checksum beginning `1616fb0` is not present in this checkout. The discrepancy is recorded in the [benchmark integrity report](docs/benchmark_integrity_report.md); the data was not modified to recreate it.
 
-On the completed 30-source synthetic pilot, Graph Entity retrieval reduced false positives from 60–61 to 28 while recovering all 30 gold labels.
+## 4. Benchmark design
 
-| Method | TP | FP | FN | Precision | Recall | F1 | Negative abstention |
+The current run is a preregistered exploratory portfolio benchmark v1, not a confirmatory scientific study. The algorithms, thresholds, field selection, dataset, questions, gold labels, and Top-3 cutoff were frozen before the 120 current outputs were generated, although the dataset and gold labels already existed.
+
+All four methods retrieve Source IDs for the same questions. The benchmark evaluates retrieval—not generated-answer quality. Empty-gold questions use abstention correctness as their primary outcome and are excluded from macro retrieval averages. Exact rules are in [algorithm preregistration v1](docs/algorithm_preregistration_v1.md).
+
+The repository also contains an earlier 30-profile developmental pilot. Its stored predictions, dataset, and implementations differ from the current benchmark and are not reused as v1 results.
+
+## 5. Observed results
+
+Micro retrieval metrics below use the 25 answerable questions; correct abstentions use the five empty-gold questions.
+
+| Method | TP | FP | FN | Precision | Recall | F1 | Correct abstentions |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Keyword-IDF@3 | 29 | 61 | 1 | 32.2% | 96.7% | 48.3% | 0.0% |
-| TF-IDF Vector@3 | 30 | 60 | 0 | 33.3% | 100.0% | 50.0% | 0.0% |
-| Graph Entity@3 | 30 | 28 | 0 | 51.7% | 100.0% | 68.2% | 40.0% |
+| BM25 | 49 | 26 | 9 | 65.3% | 84.5% | 73.7% | 0/5 |
+| MiniLM vector | 39 | 36 | 19 | 52.0% | 67.2% | 58.6% | 0/5 |
+| Unweighted graph | 19 | 21 | 39 | 47.5% | 32.8% | 38.8% | 5/5 |
+| Provenance-aware graph | 17 | 13 | 41 | 56.7% | 29.3% | 38.6% | 5/5 |
 
-These values are recomputed from the included predictions and gold labels. A [validation note](docs/validation-notes.md) records a corrected inconsistency in an earlier presentation draft.
+![Grouped comparison of precision, recall, and F1 for all four retrieval methods](docs/assets/benchmark_metrics.svg)
 
-## System design
+The complete outputs are in [the validated v1 result directory](results/codex_benchmark_v1_20260824_204717/).
 
-```mermaid
-flowchart TD
-    A[Source records] --> B[Knowledge Warehouse]
-    B --> C[Identity and provenance checks]
-    C --> D[Retrieval and path ranking]
-    D --> E[Source-level evaluation]
-    D -. evidence packet .-> F[Optional language model]
+## 6. Interpretation
+
+BM25 achieved the highest F1 on this small, entity-heavy synthetic benchmark. Provenance filtering reduced graph false positives from 21 to 13 and raised precision from 47.5% to 56.7%, but it also reduced true positives and recall. Its F1 did not improve over the unweighted graph baseline. Both graph methods correctly abstained on all five unanswerable questions; neither text method did.
+
+These results show a precision–recall trade-off, not general superiority. Five abstention questions are too few for broad abstention claims.
+
+## 7. Architecture and workflow
+
+```text
+Frozen profiles + graph + questions + gold labels
+                    |
+          shared validated loader
+                    |
+    +---------------+----------------+-------------------+
+    |               |                |                   |
+   BM25       MiniLM vectors   unweighted BFS   provenance filtering
+    |               |                |                   |
+    +---------------+----------------+-------------------+
+                    |
+        ranked Top-3 Source IDs + traces
+                    |
+         shared metrics and reports
 ```
 
-The architecture combines a canonical Knowledge Warehouse, evidence-based routing, a proposed confidence layer, and network/evaluation metrics. Full rationale and decision rules are in [Methodology](docs/methodology.md).
+BM25 and MiniLM use identical evidence-bearing profile text. The graph methods use the frozen edges and deterministic seed/traversal rules; the provenance method additionally validates paths against direct profile evidence and records exclusions.
 
-## What is included
+## 8. Reproduction
 
-| Path | Contents |
-|---|---|
-| `data/test_graph_slice.json` | Frozen 50-source node-link graph |
-| `data/workbooks/` | Completed pilot workbook and final calculation-ready matrix |
-| `data/csv/` | Reviewable CSV exports used by the verification scripts |
-| `demo/index.html` | Interactive four-stage network prototype |
-| `scripts/audit_graph.py` | Graph integrity, topology, concentration, and hash audit |
-| `scripts/evaluate_pilot.py` | Recomputes Source-level pilot metrics |
-| `scripts/verify_release.py` | Enforces the public claim boundary and frozen counts |
-| `docs/` | Methodology, results, data dictionary, and validation notes |
-
-The 367 MB original graph is intentionally excluded. The public portfolio uses the smaller frozen slice that reviewers can inspect and reproduce.
-
-## Reproduce the checks
-
-Python 3.10+ is sufficient; the scripts use only the standard library.
+Use Python 3.12 in a fresh environment:
 
 ```bash
-python3 scripts/audit_graph.py
-python3 scripts/evaluate_pilot.py
-python3 scripts/verify_release.py
+python3.12 -m venv .venv-benchmark
+source .venv-benchmark/bin/activate
+python -m pip install -r requirements-benchmark.txt
+
+HF_HOME="$PWD/.cache/huggingface" \
+  python -m unittest discover -v
+
+HF_HOME="$PWD/.cache/huggingface" \
+  python scripts/run_benchmark.py
 ```
 
-To view the prototype, open `demo/index.html` in a browser. It loads D3.js from cdnjs.
+On Windows PowerShell, activate with `.venv-benchmark\Scripts\Activate.ps1`; the remaining `python` commands are unchanged (set `$env:HF_HOME="$PWD\.cache\huggingface"` first).
 
-## Current claim boundary
+The first MiniLM run downloads the pinned `sentence-transformers/all-MiniLM-L6-v2` revision and therefore requires network access. It uses no paid API. To regenerate the charts from a result CSV:
 
-The 50-source matrix is frozen and calculation-ready, but none of its four retrieval methods has been executed in this package. No 50-source winner is claimed. Confidence-weighted edges are also a proposed extension: all 116 frozen graph edges currently lack a calibrated confidence field.
+```bash
+python scripts/generate_result_charts.py \
+  --input results/codex_benchmark_v1_20260824_204717/aggregate_metrics.csv \
+  --output-dir docs/assets
+```
 
-The project supports a controlled retrieval comparison and a sponsor handoff package. It does not establish generated-answer faithfulness, production privacy or security, cross-domain generalization, or production readiness.
+## 9. Repository structure
 
-## My contribution
+| Path | Purpose |
+|---|---|
+| `data/test_graph_slice.json` | Frozen synthetic graph and Source profiles |
+| `data/workbooks/`, `data/csv/` | Frozen questions, gold labels, original matrix, and pilot artifacts |
+| `retrieval_benchmark/` | Shared benchmark code and four retrievers |
+| `scripts/run_benchmark.py` | Executes the 120-row benchmark |
+| `scripts/generate_result_charts.py` | Rebuilds SVG charts from aggregate CSV |
+| `tests/` | Integrity and behavioral tests |
+| `docs/` | Preregistration, integrity evidence, methodology, and chart assets |
+| `results/codex_benchmark_v1_20260824_204717/` | Frozen validated v1 outputs and reports |
+| `demo/` | Earlier interactive portfolio prototype |
 
-My portfolio focus is the translation layer between AI research and an auditable product decision: narrowing the sponsor's broad trust problem, integrating the team's methodology, constructing and documenting the evaluation package, explaining the metrics and claim boundaries, developing the prototype narrative, and leading the final report and handoff presentation.
+## 10. Limitations
 
-## Project context
+- Synthetic data may not reflect entity ambiguity, language, graph topology, or evidence quality in real organizational data.
+- This benchmark does not evaluate generated answers, answer grounding, or a complete GraphRAG system.
+- The 30 questions and five abstention cases are small and were not a held-out confirmatory study.
+- Local latency measurements on this small benchmark are not evidence of production scalability.
+- API cost was `$0.00`; local compute, electricity, and hardware cost were not monetized.
+- The methods are fixed transparent baselines, not production-ready retrieval systems.
+- Results should not be generalized to authorized non-synthetic or cross-domain graphs.
 
-- **Program:** University of Washington, Master of Science in Information Management
-- **Format:** Sponsored Industry Practicum, four-person team
-- **Partner:** LumIntelligence
-- **Sponsor:** Peter Wang
-- **Completed:** August 2026
+## 11. Project Attribution
 
-All donor profiles are synthetic test fixtures. See [Public portfolio notice](NOTICE.md) for data and publication boundaries.
+This repository originated from a team-based University of Washington Master of Science in Information Management practicum sponsored by LumIntelligence, with Peter Wang serving as the project sponsor. The practicum team developed the original methodology, prototype design, frozen synthetic evaluation artifacts, and final report.
+
+Yijie Ren’s documented contributions included integrating the evidence-first retrieval benchmark, designing the experimental and evaluation framework, analyzing results, developing prototypes, and translating technical findings into recommendations.
+
+The executable Package B v1 benchmark presented in this repository was completed as a post-practicum extension of the team’s frozen evaluation artifacts. It implements and independently reproduces four preregistered retrieval methods across all 120 method–question combinations.
+
+All 50 donor profiles used in the benchmark are synthetic test data. They do not represent real donors, customers, or production records. The repository contains no proprietary production graph, and the reported results should not be interpreted as production validation or as an endorsement by LumIntelligence.
+
+In this post-practicum extension, I extended the team’s frozen evaluation design into a reproducible four-method benchmark, preregistered the implementation rules, validated all 120 runs, and analyzed the resulting precision–recall and abstention trade-offs.
+
+See [RELEASE_NOTES_v1.md](RELEASE_NOTES_v1.md) for the release boundary and [NOTICE.md](NOTICE.md) for publication context.

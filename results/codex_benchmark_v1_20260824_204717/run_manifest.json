@@ -1,0 +1,63 @@
+{
+  "run_id": "codex_benchmark_v1_20260824_204717",
+  "benchmark_classification": "preregistered exploratory portfolio benchmark v1",
+  "dataset_classification": "synthetic test fixture",
+  "started_at_utc": "2026-08-24T20:47:29.636798+00:00",
+  "finished_at_utc": "2026-08-24T20:47:30.413829+00:00",
+  "git_commit": "80cf290ff2c9f9fb1d01185a86e22d8d505a66ba",
+  "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "packages": {
+    "sentence-transformers": "6.0.0",
+    "transformers": "5.15.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.13.0",
+    "numpy": "2.5.2",
+    "scikit-learn": "1.9.0",
+    "huggingface-hub": "1.28.0"
+  },
+  "model": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_dimension": 384,
+    "max_sequence_length": 256,
+    "source_embedding_cache": ".cache/retrieval_embeddings/v1/cfa22f31d1d0186f6f54119c5be0597f88b94c6fa4a1db8c39cef4c975c7f498/sentence-transformers_all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "source_cache_hit_at_run": false
+  },
+  "fingerprints": {
+    "graph_raw_sha256": "bd6c8802a864b4599c064d34c01a5d8b460cb4f040bd8339f745bef8dcf61ad5",
+    "graph_canonical_json_sha256": "cfa22f31d1d0186f6f54119c5be0597f88b94c6fa4a1db8c39cef4c975c7f498",
+    "algorithm_preregistration_sha256": "e63fff2345e947406ad0d8cbfa89abbb0a01c387660d179034077a83afa1ce7f",
+    "historical_workbook_sha256_discrepancy": "1616fb0f1e4499a6512aab756dd45f6a77526f1087cf735549cce2c434427876"
+  },
+  "benchmark": {
+    "profiles": 50,
+    "nodes": 118,
+    "directed_edges": 116,
+    "questions": 30,
+    "answerable": 25,
+    "abstention": 5,
+    "gold_assignments": 58,
+    "top_k": 3
+  },
+  "implementations": [
+    "bm25_v1",
+    "minilm_vector_v1",
+    "unweighted_graph_v1",
+    "provenance_graph_v1"
+  ],
+  "rows": 120,
+  "tests_before_run": {
+    "command": "python -W error::ResourceWarning -m unittest discover -v",
+    "tests": 21,
+    "status": "PASS"
+  },
+  "implementation_deviations": [],
+  "environment_fixes_before_successful_run": [
+    "Redirected Hugging Face cache from an unwritable home cache to the repository-local ignored .cache/huggingface directory.",
+    "Added the repository root to the direct script launcher's sys.path after a pre-run import failure; covered by a regression test."
+  ],
+  "api_calls": 0,
+  "api_cost_usd": 0.0,
+  "random_seeds": "NOT_APPLICABLE; all algorithms deterministic and no stochastic sampling used"
+}

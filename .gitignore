@@ -1,6 +1,14 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+.AppleDouble
+Thumbs.db
+Desktop.ini
+*.swp
+*.tmp
 .idea/
 .vscode/
 reports/*.json
+.cache/
+.venv*/
+results/codex_run_*/
