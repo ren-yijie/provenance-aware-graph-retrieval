@@ -47,7 +47,7 @@ Micro retrieval metrics below use the 25 answerable questions; correct abstentio
 
 ![Grouped comparison of precision, recall, and F1 for all four retrieval methods](docs/assets/benchmark_metrics.svg)
 
-The complete outputs are in [the validated v1 result directory](results/codex_benchmark_v1_20260824_204717/).
+The complete outputs are in [the validated v1 result directory](results/v1.0.0/).
 
 ## 6. Interpretation
 
@@ -97,7 +97,7 @@ The first MiniLM run downloads the pinned `sentence-transformers/all-MiniLM-L6-v
 
 ```bash
 python scripts/generate_result_charts.py \
-  --input results/codex_benchmark_v1_20260824_204717/aggregate_metrics.csv \
+  --input results/v1.0.0/aggregate_metrics.csv \
   --output-dir docs/assets
 ```
 
@@ -112,7 +112,7 @@ python scripts/generate_result_charts.py \
 | `scripts/generate_result_charts.py` | Rebuilds SVG charts from aggregate CSV |
 | `tests/` | Integrity and behavioral tests |
 | `docs/` | Preregistration, integrity evidence, methodology, and chart assets |
-| `results/codex_benchmark_v1_20260824_204717/` | Frozen validated v1 outputs and reports |
+| `results/v1.0.0/` | Frozen validated v1 outputs and reports |
 | `demo/` | Earlier interactive portfolio prototype |
 
 ## 10. Limitations

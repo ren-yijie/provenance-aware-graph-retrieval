@@ -154,7 +154,7 @@ def graph_tradeoff_chart(rows: list[dict[str, object]]) -> str:
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    default_input = root / "results" / "codex_benchmark_v1_20260824_204717" / "aggregate_metrics.csv"
+    default_input = root / "results" / "v1.0.0" / "aggregate_metrics.csv"
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, default=default_input)
     parser.add_argument("--output-dir", type=Path, default=root / "docs" / "assets")

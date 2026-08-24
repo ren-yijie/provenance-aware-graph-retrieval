@@ -50,4 +50,4 @@ These ideas are intentionally not incorporated into v1:
 - larger or authorized non-synthetic evaluation data;
 - generated-answer grounding evaluation.
 
-The frozen v1 outputs and full evidence are in `results/codex_benchmark_v1_20260824_204717/`.
+The frozen v1 outputs and full evidence are in `results/v1.0.0/`.
