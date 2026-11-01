@@ -1,0 +1,27 @@
+test_deterministic_ranking_and_tie_break (tests.test_benchmark.BM25Tests.test_deterministic_ranking_and_tie_break) ... ok
+test_zero_score_abstains (tests.test_benchmark.BM25Tests.test_zero_score_abstains) ... ok
+test_broken_graph_reference_rejected (tests.test_benchmark.GraphTests.test_broken_graph_reference_rejected) ... ok
+test_deterministic_graph_ranking (tests.test_benchmark.GraphTests.test_deterministic_graph_ranking) ... ok
+test_generic_concept_threshold (tests.test_benchmark.GraphTests.test_generic_concept_threshold) ... ok
+test_identity_collisions_derived (tests.test_benchmark.GraphTests.test_identity_collisions_derived) ... ok
+test_paths_never_exceed_two_edges_and_resolve_sources (tests.test_benchmark.GraphTests.test_paths_never_exceed_two_edges_and_resolve_sources) ... ok
+test_provenance_paths_and_filters (tests.test_benchmark.GraphTests.test_provenance_paths_and_filters) ... ok
+test_all_gold_source_ids_exist (tests.test_benchmark.IntegrityTests.test_all_gold_source_ids_exist) ... ok
+test_build_retrieval_text_rejects_non_source (tests.test_benchmark.IntegrityTests.test_build_retrieval_text_rejects_non_source) ... ok
+test_frozen_fingerprints (tests.test_benchmark.IntegrityTests.test_frozen_fingerprints) ... ok
+test_no_evaluation_fields_leak_into_retrieval_text (tests.test_benchmark.IntegrityTests.test_no_evaluation_fields_leak_into_retrieval_text) ... ok
+test_shared_retrieval_text_is_content_only (tests.test_benchmark.IntegrityTests.test_shared_retrieval_text_is_content_only) ... ok
+test_direct_runner_launcher_imports_package (tests.test_benchmark.IsolationTests.test_direct_runner_launcher_imports_package) ... ok
+test_retrievers_have_no_gold_parameter_or_attribute (tests.test_benchmark.IsolationTests.test_retrievers_have_no_gold_parameter_or_attribute) ... ok
+test_answerable_metrics (tests.test_benchmark.SchemaMetricTests.test_answerable_metrics) ... ok
+test_empty_gold_correct_abstention_is_not_applicable (tests.test_benchmark.SchemaMetricTests.test_empty_gold_correct_abstention_is_not_applicable) ... ok
+test_empty_gold_incorrect_retrieval (tests.test_benchmark.SchemaMetricTests.test_empty_gold_incorrect_retrieval) ... ok
+test_top_three_enforced (tests.test_benchmark.SchemaMetricTests.test_top_three_enforced) ... ok
+test_cache_and_threshold (tests.test_benchmark.VectorTests.test_cache_and_threshold) ... ok
+test_model_revision_is_pinned_to_executed_snapshot (tests.test_benchmark.VectorTests.test_model_revision_is_pinned_to_executed_snapshot) ... ok
+test_normalization (tests.test_benchmark.VectorTests.test_normalization) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.232s
+
+OK

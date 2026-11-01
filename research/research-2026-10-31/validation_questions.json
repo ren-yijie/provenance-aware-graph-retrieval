@@ -1,0 +1,577 @@
+{
+  "classification": "post-hoc mechanism development checks; NOT independent held-out test",
+  "same_corpus": true,
+  "author_exposed_to_original_30_questions": true,
+  "cases": [
+    {
+      "query_id": "N01",
+      "group": "name",
+      "text": "Find every profile whose name begins with Kwame Asante.",
+      "gold_source_ids": [
+        "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+        "SRC_07d47bea6aab444da70c50c215cf1e4e"
+      ],
+      "gold_donor_ids": [
+        "D0124",
+        "D0559"
+      ],
+      "label_basis": "name prefix in metadata; verify profile first sentence",
+      "source_evidence": [
+        {
+          "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+          "donor_id": "D0124",
+          "content": "Kwame Asante is a cardiologist and professor of medicine at Weill Cornell Medical College, where he also directs a research lab focused on cardiac imaging. He grew up in the Bronx and did his undergraduate work at Howard University before medical school at Columbia. Kwame and his wife Ama live in Park Slope with their daughter, who attends Brooklyn Friends School. He is passionate about art as a form of resistance and narrative, and his collecting interests center on Basquiat-era Neo-Expressionism and Kerry James Marshall's figurative work. He owns two Marshall prints acquired through the Studio Museum's benefit auction and has attended every Studio Museum benefit for the past eight years. He is also a board member of the Studio Museum in Harlem. Kwame attended Art Basel Miami Beach in 2024 for the first time and connected with our development associate there. He supports several arts organizations through a donor-advised fund at the New York Community Trust. He runs — completed the Chicago Marathon in October 2024, his fifth marathon — and coaches a youth running program in Brownsville. Diana Flores manages this relationship. Potential to grow from annual to mid-tier with focused cultivation.",
+          "metadata": {
+            "donor_id": "D0124",
+            "name": "Kwame Asante",
+            "age": 46,
+            "location": "Park Slope, Brooklyn, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          }
+        },
+        {
+          "source_id": "SRC_07d47bea6aab444da70c50c215cf1e4e",
+          "donor_id": "D0559",
+          "content": "Kwame Asante-Brown is a Chicago-based venture capitalist, a partner at Midway Ventures focused on climate technology. Ghanaian-American, he grew up on the South Side of Chicago and attended Northwestern for his undergraduate degree and MIT for his MBA. He maintains a close relationship with New York's art world through his sister, a gallery director in Chelsea, who first introduced him to the museum. He collects Neo-Expressionism with particular focus on Kerry James Marshall and Keith Haring: he owns two Marshall prints and an early Haring tarp painting acquired through the Estate. He attended Art Basel Miami in 2022 and 2024. He has given $5,000 in each of the last two years. Diana Flores manages the relationship. Despite his Chicago base, he visits New York five to seven times per year and has attended three museum events in 2024. His long-term giving potential is high given his career. A mid-tier cultivation path is appropriate; the next ask should be $12,000–$15,000.",
+          "metadata": {
+            "donor_id": "D0559",
+            "name": "Kwame Asante-Brown",
+            "age": 43,
+            "location": "Chicago, IL",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N02",
+      "group": "name",
+      "text": "Find the profile named Elena Sorokina.",
+      "gold_source_ids": [
+        "SRC_19d8b205b26b4f32a7345cfbff2497b3"
+      ],
+      "gold_donor_ids": [
+        "D0481"
+      ],
+      "label_basis": "exact metadata name; first sentence",
+      "source_evidence": [
+        {
+          "source_id": "SRC_19d8b205b26b4f32a7345cfbff2497b3",
+          "donor_id": "D0481",
+          "content": "Elena Sorokina is a 59-year-old managing director at Lazard Asset Management, where she heads the fixed income quantitative strategies group. She began her career at Vanguard in Philadelphia and joined Lazard after completing an MBA at Chicago Booth. She lives in a large apartment in Midtown East. Elena's collecting interests center on contemporary photography — she has built a serious collection focused on Andreas Gursky and has recently acquired a work by Richard Avedon from an estate sale. She attended Frieze London last October and Art Basel Basel in June. Elena serves on the board of the New York Philharmonic and gives through a donor-advised fund. She has been giving at the mid level here for three years. She is an avid triathlete and completed Ironman Kona last October, finishing in the top quarter of her age group — a remarkable achievement at her age. Cultivation note: very driven personality; responds to excellence and prestige. James Reuter to propose a recognition event and explore a mid-to-major upgrade conversation around the music and sound art programming.",
+          "metadata": {
+            "donor_id": "D0481",
+            "name": "Elena Sorokina",
+            "age": 59,
+            "location": "Midtown East, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "James Reuter"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N03",
+      "group": "name_collision",
+      "text": "Find both profiles named Sophia Andreou.",
+      "gold_source_ids": [
+        "SRC_41567911c8b045bd8dd0e55e8e69a06b",
+        "SRC_b159124a50e14ab3b5f92aabb61fdf89"
+      ],
+      "gold_donor_ids": [
+        "D0442",
+        "D0583"
+      ],
+      "label_basis": "exact metadata name, separate donor IDs",
+      "source_evidence": [
+        {
+          "source_id": "SRC_b159124a50e14ab3b5f92aabb61fdf89",
+          "donor_id": "D0442",
+          "content": "Sophia Andreou is a 56-year-old senior partner at Sullivan & Cromwell, where she specializes in securities regulation and financial institution compliance. Born in Athens and educated at the University of Athens Law School and Yale Law School, she has been a New York attorney for over twenty-five years. She lives in a pre-war apartment on the Upper East Side. Sophia's collecting interest is in classical and contemporary Greek sculpture and photography — she owns pieces by Greek photographers including Nikos Economopoulos and has been interested in how museums contextualize Mediterranean heritage alongside contemporary work. She is a museum donor at the mid tier, introduced to the institution three years ago through the museum's Hellenic arts advisory group. Diana Flores manages the relationship. Sophia also sits on the board of the New York Philharmonic in a governance capacity. She is a precise, analytical personality who responds well to program impact data and governance transparency in donor communications. A $25,000 ask for the international photography acquisitions fund is planned. She attended Art Basel Basel last June and has mentioned Frieze London as an annual fixture. Her Sullivan & Cromwell connection overlaps with a partner at another firm whose spouse is also a museum donor — worth noting for cross-referencing.",
+          "metadata": {
+            "donor_id": "D0442",
+            "name": "Sophia Andreou",
+            "age": 56,
+            "location": "Upper East Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Diana Flores"
+          }
+        },
+        {
+          "source_id": "SRC_41567911c8b045bd8dd0e55e8e69a06b",
+          "donor_id": "D0583",
+          "content": "Sophia Andreou is a 43-year-old fashion designer and founder of a luxury ready-to-wear label, Andreou Studio, sold through Net-a-Porter and a flagship in SoHo. Born in Athens, she studied at Central Saint Martins and spent years at Dior before launching independently in 2014. She lives in Tribeca in a loft that doubles as a studio. Sophia has been a mid-tier museum donor for four years, drawn in by a crossover exhibition on fashion and photography that featured archival Avedon images. Her collection is photography-first: she has three Richard Avedon large-format portraits and recently acquired an Andreas Gursky image of a fashion show floor — she described it as almost diagnostic of her industry. She attended Frieze London last October and Frieze New York in May. Michael Torres manages the museum relationship. Sophia serves on the advisory board of the International Center of Photography and has introduced three colleagues as museum members. She is interested in sponsoring a fashion photography program and has given verbal encouragement to a $35,000 co-presenting proposal. Detailed proposal to follow from the development office in Q3. She prefers WhatsApp for scheduling.",
+          "metadata": {
+            "donor_id": "D0583",
+            "name": "Sophia Andreou",
+            "age": 43,
+            "location": "Tribeca, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Michael Torres"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N04",
+      "group": "name_collision",
+      "text": "Find all profiles named Tariq Al-Rashid.",
+      "gold_source_ids": [
+        "SRC_0441dc10f8e34937bdcfda1a68b4d7c2",
+        "SRC_68ed2f97e7a248d694f231d451831c04",
+        "SRC_7ec60d6b0cec447fa0ee0dbbf6fb386f"
+      ],
+      "gold_donor_ids": [
+        "D0215",
+        "D0566",
+        "D0905"
+      ],
+      "label_basis": "exact metadata name, separate donor IDs",
+      "source_evidence": [
+        {
+          "source_id": "SRC_68ed2f97e7a248d694f231d451831c04",
+          "donor_id": "D0215",
+          "content": "Tariq Al-Rashid is a managing director at BlackRock's multi-asset strategies group, where he oversees a team of portfolio managers focused on sovereign wealth clients in the Gulf and Southeast Asia. Before BlackRock he spent eight years at Barclays Capital in London and Dubai. He relocated to Tribeca four years ago with his wife Nadia and their two children, and they have become active supporters of several cultural institutions. Tariq collects contemporary photography — he has works by Taryn Simon and Richard Avedon's late commercial photography series — and recently loaned a Simon piece to a group show at ICP, on whose Photography Council he now sits. He attended Art Basel Miami Beach last December and met with the museum's director at a collector's dinner there. His motivations for giving are tied closely to education access: he has spoken repeatedly about wanting his children to see art by people who look like them. Next steps: Michael Torres to propose a co-branded education fund naming opportunity. Potential ask: $75,000 over three years.",
+          "metadata": {
+            "donor_id": "D0215",
+            "name": "Tariq Al-Rashid",
+            "age": 47,
+            "location": "Tribeca, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Michael Torres"
+          }
+        },
+        {
+          "source_id": "SRC_0441dc10f8e34937bdcfda1a68b4d7c2",
+          "donor_id": "D0566",
+          "content": "Tariq Al-Rashid is a managing partner at a real estate private equity firm, Crescent Bridge Capital, which he co-founded in 2011 after leaving a VP role at Cushman & Wakefield. The firm focuses on mixed-use development in secondary markets — Pittsburgh, Nashville, and Detroit. He is 47, lives in the West Village, and travels extensively for deal flow. Tariq became a museum donor through his architect partner, whose firm designed a museum expansion in another city. His collecting interests span figurative painting and works on paper — he has pieces by Eric Fischl and a strong Nicole Eisenman oil acquired at Frieze New York in 2022. He also attended Art Basel Miami last December and purchased a work by a Berlin-based painter through a gallery introduction arranged by the museum's curatorial team. Michael Torres manages the relationship and hosted Tariq and his partner at a small curatorial dinner last spring. A mid-level ask of $30,000 for the education wing is planned for Q4. Tariq is private and does not want his name in public donor lists without prior discussion.",
+          "metadata": {
+            "donor_id": "D0566",
+            "name": "Tariq Al-Rashid",
+            "age": 47,
+            "location": "West Village, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Michael Torres"
+          }
+        },
+        {
+          "source_id": "SRC_7ec60d6b0cec447fa0ee0dbbf6fb386f",
+          "donor_id": "D0905",
+          "content": "Tariq Al-Rashid is an investment banker at a boutique restructuring advisory firm in Midtown, having spent his earlier career at Goldman Sachs in the Leveraged Finance group. He holds an MBA from Booth and a bachelor's from Georgetown. Tariq lives in Park Slope with his wife Leila and their three children. His collecting interests are in figurative painting — he is particularly drawn to Lucian Freud and Jenny Saville and attended a lecture at the museum on contemporary British figuration that he described as 'genuinely revelatory.' He has attended Art Basel Miami the past three years, usually with a group of collector friends from the finance world. Tariq is a devoted skier who spends a week each February at Zermatt; his children take lessons while he skis off-piste. Michael Torres introduced him to the museum through a peer referral and has cultivated the relationship over two years. Current giving is at the Patron level. An ask in the $20,000–$30,000 range for a dedicated education program fund is planned for the first quarter of next year.",
+          "metadata": {
+            "donor_id": "D0905",
+            "name": "Tariq Al-Rashid",
+            "age": 49,
+            "location": "Park Slope, Brooklyn, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Michael Torres"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N05",
+      "group": "name_collision",
+      "text": "Find both profiles named Vikram Nair.",
+      "gold_source_ids": [
+        "SRC_7d71e393a7e045b99266d9b05b499cb3",
+        "SRC_e724d27deb20445695164b8765b80b63"
+      ],
+      "gold_donor_ids": [
+        "D0476",
+        "D0801"
+      ],
+      "label_basis": "exact metadata name, separate donor IDs",
+      "source_evidence": [
+        {
+          "source_id": "SRC_e724d27deb20445695164b8765b80b63",
+          "donor_id": "D0476",
+          "content": "Vikram Nair is a 48-year-old partner at Sullivan & Cromwell in the capital markets practice, having spent his entire career at the firm after graduating from Harvard Law. He lives with his family in Scarsdale, Westchester County, and commutes to the Midtown office. Vikram and his wife Ananya are co-founders of the Nair Family Foundation, which focuses on arts education and access, distributing around $250,000 per year. His collecting interests are in contemporary photography — he has built a careful collection of Andreas Gursky prints and follows the work of Cindy Sherman. He attended Art Basel Miami Beach last December and is a regular at Frieze New York. Vikram also sits on the advisory board of the ICP. He has given at the mid level to this museum for four years and attended a curator-led talk on photography last spring, which he described as one of the best museum events he's attended. Cultivation note: strong alignment with photography programming. Priya Mehta to explore a $50,000 endowed fund for photography education programming.",
+          "metadata": {
+            "donor_id": "D0476",
+            "name": "Vikram Nair",
+            "age": 48,
+            "location": "Scarsdale, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Priya Mehta"
+          }
+        },
+        {
+          "source_id": "SRC_7d71e393a7e045b99266d9b05b499cb3",
+          "donor_id": "D0801",
+          "content": "Vikram Nair is a managing director in Goldman Sachs's investment banking division, where he has worked for eleven years following a prior stint at JPMorgan Chase. He focuses primarily on technology M&A and has a particular interest in media sector transactions. Vikram began attending museum preview evenings in 2021 through a colleague referral and has since come to three curator-led gallery walkthroughs. He responded strongly to the museum's Franz Kline retrospective, citing a long-standing passion for Abstract Expressionism — he currently holds works by Kline and Lee Krasner acquired through Sotheby's and a private dealer in London. He and his wife Ananya live on the Upper East Side with their two school-age children. Outside of work Vikram races with a Swan 48 he co-owns called Breakwater in the Newport-Bermuda race; next year's campaign is already planned. He supports the Guggenheim Foundation as an annual donor. Cultivation note: Priya Mehta should schedule a studio visit before year-end; a mid-level ask in the $25K range is appropriate to test ceiling.",
+          "metadata": {
+            "donor_id": "D0801",
+            "name": "Vikram Nair",
+            "age": 44,
+            "location": "Upper East Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Priya Mehta"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N06",
+      "group": "name_collision",
+      "text": "Find both profiles named Andre Beaumont.",
+      "gold_source_ids": [
+        "SRC_9f81162e8a1f428a9ea29c0188dca111",
+        "SRC_fe56228c8f38461b96964e6e5303294b"
+      ],
+      "gold_donor_ids": [
+        "D0553",
+        "D0892"
+      ],
+      "label_basis": "exact metadata name, separate donor IDs",
+      "source_evidence": [
+        {
+          "source_id": "SRC_fe56228c8f38461b96964e6e5303294b",
+          "donor_id": "D0553",
+          "content": "Andre Beaumont is a food and beverage entrepreneur who founded and sold two restaurant groups in New York before launching Beaumont Hospitality, a boutique hotel consultancy. He lives in a landmarked brownstone in Carroll Gardens, Brooklyn, that he has meticulously restored. His aesthetic sensibility informs his collecting: he favors figurative painting with psychological depth — he owns a Jenny Saville limited edition print and an Alice Neel portrait of an unknown subject acquired at auction in 2022. He attended Frieze New York in 2023 and 2024. Andre is a club-level tennis player who competes at the Brooklyn Bridge Park courts in a USTA league on summer weekday evenings. He gives $4,500 annually. Diana Flores manages the relationship. He has a wide network in the Brooklyn arts and hospitality community and has volunteered to host a small cultivation dinner for the museum at his home. This offer should be acted upon in spring 2025. An ask of $10,000–$15,000 following the dinner event is a reasonable next step.",
+          "metadata": {
+            "donor_id": "D0553",
+            "name": "Andre Beaumont",
+            "age": 48,
+            "location": "Carroll Gardens, Brooklyn, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          }
+        },
+        {
+          "source_id": "SRC_9f81162e8a1f428a9ea29c0188dca111",
+          "donor_id": "D0892",
+          "content": "Andre Beaumont is a forty-year-old partner at a Bain Capital-affiliated real estate investment platform based in Boston, though he has lived in the West Village for five years after relocating for personal reasons. He attended Williams College and Harvard Business School, with a summer in the Bain consulting program between degrees. His collecting interests focus on contemporary figurative painting — he owns works by Nicole Eisenman and Eric Fischl, and is on the waitlist for a Jenny Saville studio visit. He attended Frieze New York in May and Frieze London in October as part of a self-described annual art circuit. He was introduced to the museum at an Art Leaders evening in early spring and made his first gift within a week of the event. He also skis at Aspen each winter, typically for two weeks, and is part of a group that books a house on Red Mountain. Cultivation note: Diana Flores to build on the momentum from his initial gift; Andre is responsive and moves quickly when engaged. A mid-level ask of $5,000 is well within range for this fiscal year.",
+          "metadata": {
+            "donor_id": "D0892",
+            "name": "Andre Beaumont",
+            "age": 40,
+            "location": "West Village, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Diana Flores"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N07",
+      "group": "negative_name",
+      "text": "Find the profile named Zorina Vale.",
+      "gold_source_ids": [],
+      "gold_donor_ids": [],
+      "label_basis": "no matching name among all 50 metadata records",
+      "source_evidence": []
+    },
+    {
+      "query_id": "N08",
+      "group": "negative_conjunction",
+      "text": "Which profile named Kwame Asante-Brown is a cardiologist?",
+      "gold_source_ids": [],
+      "gold_donor_ids": [],
+      "label_basis": "Asante-Brown is venture capitalist; cardiologist is Asante",
+      "source_evidence": []
+    },
+    {
+      "query_id": "N09",
+      "group": "affiliation",
+      "text": "List the trustees and board members of the Studio Museum in Harlem.",
+      "gold_source_ids": [
+        "SRC_05424f4340bd4183b43e9b0526e2a595",
+        "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+        "SRC_67fcc1ef6eaa4d7faf93e8b31f914bab"
+      ],
+      "gold_donor_ids": [
+        "D0124",
+        "D0425",
+        "D0975"
+      ],
+      "label_basis": "explicit board/trustee clauses; original Q006 labels",
+      "source_evidence": [
+        {
+          "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+          "donor_id": "D0124",
+          "content": "Kwame Asante is a cardiologist and professor of medicine at Weill Cornell Medical College, where he also directs a research lab focused on cardiac imaging. He grew up in the Bronx and did his undergraduate work at Howard University before medical school at Columbia. Kwame and his wife Ama live in Park Slope with their daughter, who attends Brooklyn Friends School. He is passionate about art as a form of resistance and narrative, and his collecting interests center on Basquiat-era Neo-Expressionism and Kerry James Marshall's figurative work. He owns two Marshall prints acquired through the Studio Museum's benefit auction and has attended every Studio Museum benefit for the past eight years. He is also a board member of the Studio Museum in Harlem. Kwame attended Art Basel Miami Beach in 2024 for the first time and connected with our development associate there. He supports several arts organizations through a donor-advised fund at the New York Community Trust. He runs — completed the Chicago Marathon in October 2024, his fifth marathon — and coaches a youth running program in Brownsville. Diana Flores manages this relationship. Potential to grow from annual to mid-tier with focused cultivation.",
+          "metadata": {
+            "donor_id": "D0124",
+            "name": "Kwame Asante",
+            "age": 46,
+            "location": "Park Slope, Brooklyn, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          }
+        },
+        {
+          "source_id": "SRC_05424f4340bd4183b43e9b0526e2a595",
+          "donor_id": "D0425",
+          "content": "Winston Akpan is a 49-year-old private equity partner at Apollo Global Management, where he focuses on consumer and media sector buyouts. Originally from Abuja and educated at Oxford and Harvard Business School, he has been in New York for fifteen years and lives in a townhouse in Brooklyn Heights. His wife, a corporate attorney at Sullivan & Cromwell, is also a museum donor. Winston's collecting interests center on Abstract Expressionism and West African contemporary art — he owns a Pollock work on paper, a Motherwell small canvas, and several works by contemporary Nigerian artists including Njideka Akunyili Crosby. He attended Art Basel Basel in June and Art Basel Miami in December. He serves as a trustee of the Studio Museum in Harlem, a role he has held for four years. His giving to this museum is at the mid tier; Priya Mehta manages the relationship. The household's combined philanthropic capacity is significant, and the museum should consider approaching the couple jointly. A $50,000 ask for the African diaspora contemporary art initiative is appropriate for this cycle. Winston is highly responsive to peer cultivation — a dinner with two other trustees from comparable institutions would be effective. Note that his wife's Sullivan & Cromwell connection overlaps with another donor in the portfolio.",
+          "metadata": {
+            "donor_id": "D0425",
+            "name": "Winston Akpan",
+            "age": 49,
+            "location": "Brooklyn Heights, Brooklyn, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Priya Mehta"
+          }
+        },
+        {
+          "source_id": "SRC_67fcc1ef6eaa4d7faf93e8b31f914bab",
+          "donor_id": "D0975",
+          "content": "Raymond Osei is a 49-year-old managing director at JPMorgan Asset Management, overseeing a multi-strategy institutional portfolio. He spent four years at Goldman Sachs in equity research before joining JPMorgan. Raymond lives in Scarsdale and commutes daily. He and his wife Abena are enthusiastic patrons of the arts. Raymond collects works by Basquiat-era artists and Kerry James Marshall — he attended the museum's Marshall retrospective lecture and requested a private follow-up viewing of the museum's Marshall holdings, which took place last fall. He is a board member of the Studio Museum in Harlem. Raymond supports the museum at the mid-tier level and has given consistently for six years. Michael Torres manages the relationship. Cultivation note: Raymond's dual board engagement (Studio Museum and active here) creates a natural bridge for a leadership gift conversation — a trustee nomination should be explored in parallel with an upgrade ask at the $75,000 level. He is analytical and responds best to data-supported impact narratives.",
+          "metadata": {
+            "donor_id": "D0975",
+            "name": "Raymond Osei",
+            "age": 49,
+            "location": "Scarsdale, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Michael Torres"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N10",
+      "group": "affiliation",
+      "text": "List profiles serving on the Dia Art Foundation board or advisory board.",
+      "gold_source_ids": [
+        "SRC_05c73e6a1a964f5bac6d06fdd4468454",
+        "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+        "SRC_e49f23a212284b8fad2b8f1a4a84341d"
+      ],
+      "gold_donor_ids": [
+        "D0091",
+        "D0350",
+        "D0488"
+      ],
+      "label_basis": "explicit board clauses; original Q008 labels",
+      "source_evidence": [
+        {
+          "source_id": "SRC_05c73e6a1a964f5bac6d06fdd4468454",
+          "donor_id": "D0091",
+          "content": "Rosemary Cavendish is a private wealth advisor at a boutique family office serving ultra-high-net-worth clients in New York and London. She spent fifteen years at Goldman Sachs's private wealth management division before joining her current firm as a managing partner. Rosemary and her husband Geoffrey, a retired art dealer, live in a large apartment on the Upper East Side and have a weekend house in Litchfield, Connecticut. Their collection, guided by Geoffrey's expertise, is significant: it includes works by Color Field painters, mid-century photographs, and several major Abstract Expressionist works on paper. Rosemary sits on the museum's finance committee and serves on the advisory board of the Dia Art Foundation. Geoffrey has been a quiet advisor to the museum's acquisitions committee and participates in dealer advisory conversations. James Reuter manages the primary relationship with Rosemary. The family does not have a foundation but gives through a substantial donor-advised fund. Major gift potential; the director should attend the next lunch scheduled with Geoffrey.",
+          "metadata": {
+            "donor_id": "D0091",
+            "name": "Rosemary Cavendish",
+            "age": 57,
+            "location": "Upper East Side, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "James Reuter"
+          }
+        },
+        {
+          "source_id": "SRC_e49f23a212284b8fad2b8f1a4a84341d",
+          "donor_id": "D0350",
+          "content": "Rachel Bloom-Finkelstein is a partner at Sullivan & Cromwell in the private equity and M&A practice. She joined S&C directly from Columbia Law eighteen years ago and has been a partner for six years. She lives on the Upper West Side with her husband and twin sons. She collects Minimalism — she owns three Donald Judd stacks acquired over a decade and a Robert Irwin scrim installation currently on loan to a museum in Connecticut. She attended the museum's Minimalism symposium and the Judd Foundation benefit gala in the same season. She is on the board of the Dia Art Foundation and chairs their development committee. She skis in Aspen every spring break with her family, staying at a house they co-own with another family. Relationship manager note: Priya Mehta manages this relationship. Rachel gives $50,000 annually, primarily to Dia Art Foundation, with $15,000 to this museum. An upgrade conversation emphasizing the Minimalism collection synergy is appropriate. Target $40,000 for next year's ask.",
+          "metadata": {
+            "donor_id": "D0350",
+            "name": "Rachel Bloom-Finkelstein",
+            "age": 46,
+            "location": "Upper West Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Priya Mehta"
+          }
+        },
+        {
+          "source_id": "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+          "donor_id": "D0488",
+          "content": "James Osei-Bonsu is a 55-year-old managing director in Goldman Sachs's private wealth management division, where he advises ultra-high-net-worth families on multi-generational wealth planning. He joined Goldman from Morgan Stanley twenty years ago. He lives in a townhouse in the West Village with his husband, an architect. James is a sophisticated and long-tenured museum donor who upgraded to major giving three years ago. His collecting interests span Abstract Expressionism and contemporary West African art — he owns a significant work by Clyfford Still and has been building a collection of Ghanaian and Nigerian contemporary artists. He attended Art Basel Basel and Art Basel Miami Beach in the same year for the first time last cycle. James is a board member of the Dia Art Foundation and gives through the Osei-Bonsu Family Foundation, which he and his husband established five years ago. Cultivation note: key relationship — significant additional gift potential. Sarah Okafor to schedule a quarterly check-in and discuss a five-year pledging commitment.",
+          "metadata": {
+            "donor_id": "D0488",
+            "name": "James Osei-Bonsu",
+            "age": 55,
+            "location": "West Village, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "Sarah Okafor"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N11",
+      "group": "metadata_conjunction",
+      "text": "Find major-tier donors with named family foundations managed by James Reuter or Sarah Okafor.",
+      "gold_source_ids": [
+        "SRC_b940430c90694a15b8d27ebc539db542",
+        "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+        "SRC_fd700683d4cb4511aec4a0b3f4752e22"
+      ],
+      "gold_donor_ids": [
+        "D0154",
+        "D0475",
+        "D0488"
+      ],
+      "label_basis": "metadata tier+manager and foundation clauses; original Q017 labels",
+      "source_evidence": [
+        {
+          "source_id": "SRC_b940430c90694a15b8d27ebc539db542",
+          "donor_id": "D0154",
+          "content": "Peter Kessler is a retired hedge fund manager who ran a market-neutral equity fund, Kessler Capital Management, for seventeen years before closing it in 2020 to manage his personal assets. He and his wife Ellen live in a duplex penthouse on the Upper West Side and have a summer home in Edgartown, Martha's Vineyard. Peter has been a major donor since 2015 and is a member of the director's leadership circle. His collecting interests are broad and eclectic — he has significant holdings in Abstract Expressionism, particularly Rothko and Pollock, as well as important contemporary photography including a large Gursky print purchased at Phillips in 2018. He attended Art Basel Basel annually for twelve years and has strong relationships with several major galleries. The Kessler Family Foundation supports the museum, the Whitney Museum Council, and Jazz at Lincoln Center. He plays competitive tennis at the USTA 4.5 level through his New York Athletic Club and has competed in club tournaments nationally. James Reuter manages this relationship in close coordination with the president. A campaign gift at the $2.5 million level is under active discussion. Kessler has expressed mild frustration with the pace of the museum's building renovation — this concern should be addressed proactively.",
+          "metadata": {
+            "donor_id": "D0154",
+            "name": "Peter Kessler",
+            "age": 61,
+            "location": "Upper West Side, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "James Reuter"
+          }
+        },
+        {
+          "source_id": "SRC_fd700683d4cb4511aec4a0b3f4752e22",
+          "donor_id": "D0475",
+          "content": "Catherine Drummond is a 65-year-old principal and founder of Drummond & Associates, a management consulting boutique serving nonprofit and philanthropic organizations. She spent the first half of her career at McKinsey & Company, where she was a partner in the social sector practice. She lives in a large apartment in Brooklyn Heights with her husband, a retired federal judge. Catherine is a sophisticated arts philanthropist — she serves on the board of the Guggenheim Foundation and has been a museum major donor for seven years. Her collecting interests center on Abstract Expressionism and she has a deep knowledge of the movement; she owns works by Motherwell and Franz Kline and has lent one piece to the museum. She attended Art Basel Basel as part of the museum's VIP group last June and also attended Frieze New York. The Drummond Foundation distributes approximately $600,000 annually, with arts and education as primary areas. Cultivation note: stewardship focus. Sarah Okafor to plan a private dinner with the director in Q1 to discuss a potential capital campaign gift.",
+          "metadata": {
+            "donor_id": "D0475",
+            "name": "Catherine Drummond",
+            "age": 65,
+            "location": "Brooklyn Heights, Brooklyn, NY",
+            "giving_tier": "major",
+            "relationship_manager": "Sarah Okafor"
+          }
+        },
+        {
+          "source_id": "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+          "donor_id": "D0488",
+          "content": "James Osei-Bonsu is a 55-year-old managing director in Goldman Sachs's private wealth management division, where he advises ultra-high-net-worth families on multi-generational wealth planning. He joined Goldman from Morgan Stanley twenty years ago. He lives in a townhouse in the West Village with his husband, an architect. James is a sophisticated and long-tenured museum donor who upgraded to major giving three years ago. His collecting interests span Abstract Expressionism and contemporary West African art — he owns a significant work by Clyfford Still and has been building a collection of Ghanaian and Nigerian contemporary artists. He attended Art Basel Basel and Art Basel Miami Beach in the same year for the first time last cycle. James is a board member of the Dia Art Foundation and gives through the Osei-Bonsu Family Foundation, which he and his husband established five years ago. Cultivation note: key relationship — significant additional gift potential. Sarah Okafor to schedule a quarterly check-in and discuss a five-year pledging commitment.",
+          "metadata": {
+            "donor_id": "D0488",
+            "name": "James Osei-Bonsu",
+            "age": 55,
+            "location": "West Village, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "Sarah Okafor"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N12",
+      "group": "negative_conjunction",
+      "text": "Which Studio Museum in Harlem board members or trustees are managed by James Reuter?",
+      "gold_source_ids": [],
+      "gold_donor_ids": [],
+      "label_basis": "all explicit Studio board/trustee profiles have other managers",
+      "source_evidence": []
+    },
+    {
+      "query_id": "N13",
+      "group": "alias_evidence",
+      "text": "List the board members or trustees of the Public Art Fund.",
+      "gold_source_ids": [
+        "SRC_a708b816d69f4c9b94fae6fb6e9c8c5d",
+        "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+        "SRC_cbf9e213476b4447a62ec10998109cd0"
+      ],
+      "gold_donor_ids": [
+        "D0171",
+        "D0664",
+        "D0762"
+      ],
+      "label_basis": "explicit board/trustee clauses; original Q007 labels",
+      "source_evidence": [
+        {
+          "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+          "donor_id": "D0171",
+          "content": "Priscilla Ng is co-founder and CEO of a Series B SaaS company serving the architecture and engineering sectors, based in DUMBO. She launched the company in 2018 after a decade in product management at Autodesk and Bentley Systems. Priscilla lives in DUMBO and is deeply embedded in the Brooklyn tech and arts communities — she serves on the board of the Public Art Fund, attending monthly meetings in their Chelsea offices. Her collecting is focused on Minimalism: she has acquired works by Anne Truitt and Robert Irwin through gallery relationships developed over four years of attending art fairs, most recently Art Basel Miami and Frieze New York. She attended the museum's architecture and art symposium in April and met the director for the first time, expressing interest in the planned outdoor sculpture installation. Priya Mehta should schedule a follow-up to discuss an annual-to-mid upgrade and potential multi-year commitment tied to the public art programming budget.",
+          "metadata": {
+            "donor_id": "D0171",
+            "name": "Priscilla Ng",
+            "age": 42,
+            "location": "DUMBO, Brooklyn, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Priya Mehta"
+          }
+        },
+        {
+          "source_id": "SRC_a708b816d69f4c9b94fae6fb6e9c8c5d",
+          "donor_id": "D0664",
+          "content": "Eduardo Villanueva-Rios spent fifteen years at Goldman Sachs in the Investment Banking Division, where he ultimately made managing director before leaving to co-found a boutique M&A advisory firm focused on Latin American media transactions. He lives in Tribeca with his wife and two teenage sons. Eduardo's collecting passion is Basquiat and the broader Neo-Expressionist circle — he owns a small Basquiat drawing acquired at Christie's in 2019 and has been building out related works by Keith Haring and Kerry James Marshall. He attended Art Basel Miami Beach every year for the past six years and describes the Untitled Art Fair there as equally important to his discovery process. He is a trustee of the Public Art Fund and helped underwrite a mural commission in the South Bronx two years ago. His family operates the Villanueva-Rios Cultural Foundation, which focuses on Latino arts organizations in New York. A major gift conversation at the $50,000 level is being planned for early 2027; relationship manager recommends the director make the ask personally over dinner.",
+          "metadata": {
+            "donor_id": "D0664",
+            "name": "Eduardo Villanueva-Rios",
+            "age": 51,
+            "location": "Tribeca, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "Michael Torres"
+          }
+        },
+        {
+          "source_id": "SRC_cbf9e213476b4447a62ec10998109cd0",
+          "donor_id": "D0762",
+          "content": "Rodrigo Esparza is a managing director in Goldman Sachs's investment banking division, focused on Latin American cross-border transactions. He joined the bank in 2003 after completing his MBA at Wharton and previously worked at Citigroup's capital markets group in Mexico City. Rodrigo and his wife Carmen live in Tribeca with their teenage daughter. His collecting interests center on Basquiat and Neo-Expressionism broadly — he owns two early Haring works and has been building toward a Kerry James Marshall acquisition. He attended the museum's gala in November and the Neo-Expressionism panel discussion in March, where he spoke briefly with the director. Rodrigo is also a board member of the Public Art Fund and has been supportive of its street-level installation programming. He skis regularly at Verbier each January. Cultivation notes: James Reuter is the relationship manager. Rodrigo's last gift was $10,000 at the major donor level. Given his board engagement at Public Art Fund and alignment with our programming, James believes a $25,000 ask is appropriate at the next cycle. Initial conversation should happen at the fall preview dinner.",
+          "metadata": {
+            "donor_id": "D0762",
+            "name": "Rodrigo Esparza",
+            "age": 47,
+            "location": "Tribeca, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "James Reuter"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N14",
+      "group": "possessive_evidence",
+      "text": "Which profile works in Lazard restructuring advisory and is linked to a Chinese American artistic identity exhibition?",
+      "gold_source_ids": [
+        "SRC_a8c756bccd424deb94082c6acdaf3f76"
+      ],
+      "gold_donor_ids": [
+        "D0292"
+      ],
+      "label_basis": "Lazard possessive and exhibition clauses",
+      "source_evidence": [
+        {
+          "source_id": "SRC_a8c756bccd424deb94082c6acdaf3f76",
+          "donor_id": "D0292",
+          "content": "Victoria Huang is a managing director at Lazard's restructuring advisory group, where she has worked for sixteen years following stints at Merrill Lynch and a boutique restructuring firm. She holds an undergraduate degree from Dartmouth and a JD/MBA joint degree from NYU. Victoria lives in the West Village with her husband and twin sons and has been a museum supporter for nine years. Her collecting interest centers on contemporary Chinese American artists — she owns significant works by Hung Liu and Martin Wong, and has been following the career of Wangechi Mutu's generation of artists closely. She attended Art Basel Hong Kong twice as a collector and is a member of the advisory board for Asian Arts at the Brooklyn Museum. Diana Flores manages the relationship and is cultivating a major gift conversation tied to a proposed exhibition on Chinese American artistic identity in New York. Victoria expressed strong enthusiasm at a recent cultivation dinner.",
+          "metadata": {
+            "donor_id": "D0292",
+            "name": "Victoria Huang",
+            "age": 45,
+            "location": "West Village, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Diana Flores"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N15",
+      "group": "possessive_evidence",
+      "text": "Which Greek-American donor works in Goldman Sachs private wealth management?",
+      "gold_source_ids": [
+        "SRC_3901afe8826243ab985f340222cb3199"
+      ],
+      "gold_donor_ids": [
+        "D0455"
+      ],
+      "label_basis": "Greek-American and Goldman private wealth clauses",
+      "source_evidence": [
+        {
+          "source_id": "SRC_3901afe8826243ab985f340222cb3199",
+          "donor_id": "D0455",
+          "content": "Nicholas Papadopoulos is a 61-year-old senior managing director in Goldman Sachs's private wealth management division, where he has worked for twenty-two years after an earlier stint at Merrill Lynch. Greek-American, he grew up in Astoria and has maintained strong ties to the Queens Greek community throughout his career. He lives in a large apartment on Park Avenue. Nicholas's collecting focus is on abstract and figurative work by Greek and Greek-American artists — he owns several works by Jannis Kounellis and Lucas Samaras, as well as a Lucian Freud etching. He has also developed an interest in Abstract Expressionism and owns a Franz Kline drawing that he acquired from a colleague's estate. He attended Art Basel Basel for the past eight years. Diana Flores manages the relationship; Nicholas has been a mid-tier donor for six years and has responded warmly to collector dinners and private curator events. He is also a competitive offshore sailor: he raced the Sydney-Hobart race last December on a friend's Baltic 45, Κυανή Βαρεία, placing mid-fleet in his division. A $45,000 ask for the contemporary art acquisitions endowment is planned for the spring solicitation. His wife Maria is a board member at the Onassis Foundation, a connection worth exploring for programmatic collaboration.",
+          "metadata": {
+            "donor_id": "D0455",
+            "name": "Nicholas Papadopoulos",
+            "age": 61,
+            "location": "Upper East Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Diana Flores"
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "N16",
+      "group": "negative_conjunction",
+      "text": "Which donor leads JPMorgan technology-sector M&A and owns seven Cindy Sherman works?",
+      "gold_source_ids": [],
+      "gold_donor_ids": [],
+      "label_basis": "Sunita has four; Alexandra has seven and different employer",
+      "source_evidence": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "description": "Byte-for-byte import of original local Phase II artifacts; historical snapshots preserved",
+  "artifacts": {
+    "research/audit-2026-10-30/all_120_method_audit.csv": "62eb6c889cbc073c93ba063d9829ae8fa99551017586b9f671fec4d2b3b63666",
+    "research/audit-2026-10-30/audit_evidence.json": "43c113674675153949e264cb08e48b9f62e3fcfd6135ce60ba737054bf8af2f3",
+    "research/audit-2026-10-30/check_summary.json": "8f198feff3bd80cf0a4d0bda167b5726e5d772dcbf218de9be3112eb018efa57",
+    "research/audit-2026-10-30/fn_stage_partition.csv": "81494b9d75bb2c58cf2aa4bbba89530b86184336f9053f12863a70fac1b226e1",
+    "research/audit-2026-10-30/reproduce_audit.py": "91912565a5303b9a2f27020551b9d7016708b8c0f44260d352fb178d379eb26b",
+    "research/audit-2026-10-30/逐题错误分析.md": "ae7fe527274c08ff59fd41de130dad39a5911ecd829342bb468b8467e04c55c2",
+    "research/research-2026-10-31/build_representation_evidence.py": "503baad4812b2afea30c377f4c173b515ac91212758b68f9ff46ded91756f155",
+    "research/research-2026-10-31/changes.csv": "27b56307c49d47d841ba91c3cbbabaa2648e951683fa8a6c2ed36bddc9af44f9",
+    "research/research-2026-10-31/experiment_protocol.md": "16505e1349005a9beaa019a8e64bda77ab4a8e94456aa0b8c0b5bc16723c996c",
+    "research/research-2026-10-31/experiments.py": "e28a2a9fa14eafacd1495241bf57122d1efe278eb391c46a1bbb080e2c1a78ad",
+    "research/research-2026-10-31/original_suite_results.txt": "7e4c5c674f3597734bc7cae0a557223bae05946b2346eaab07260d2a17740372",
+    "research/research-2026-10-31/per_query_results.csv": "deb77e3e36e1bc813d1753139b1f5887bd7ceed0e1ead274c405390fc56224ca",
+    "research/research-2026-10-31/prepare_validation.py": "a9d3b5f9e437d7177a94efaf181d52fa5441e2c3e2d54827591450c96fea5d34",
+    "research/research-2026-10-31/representation_facts.jsonl": "a2662c0da18b3b7d4ffd6c4b6b7a91dde3bb61b0153d0477c5f72888e7c52d13",
+    "research/research-2026-10-31/run_experiments.py": "8ac6e99170ce2e449dbf6809fd1aca94cabd7efa827e85f47a4363b49c93d41b",
+    "research/research-2026-10-31/run_manifest.json": "f45cb9eaf7aaa42347bd5cac3c88f5fb08aad37222195117548f215873e61ef4",
+    "research/research-2026-10-31/summary.csv": "c09a509f22f135901b3522b7de46b372c702ec0c2b7dfba86403794895300e88",
+    "research/research-2026-10-31/summary.json": "8bf110cd37f1908975b9dd6ee378f53eba6d9066f774cf62f956f26d88812542",
+    "research/research-2026-10-31/test_experiments.py": "52eb086c98178b415a99995a047607614f4c7facbc5e033cd4a2dcbcd6cc9979",
+    "research/research-2026-10-31/test_results.txt": "c2c65d0fe9e112024483cdd076de7149ebffa40cde0ff66e8cacc16a3a058278",
+    "research/research-2026-10-31/traces.jsonl": "16f5db69a053fc8f260212357de35b9015dea322c046cf9676b2fded984b3701",
+    "research/research-2026-10-31/validation_questions.json": "96b935043a1329ca51864780e2f0fd8297d80b2cdf716aba6f4438f90a981655",
+    "research/research-2026-10-31/verification.json": "0b9cc4e4f0eaa9cadb9f9838bc440375a2351718510e92795b7927595f32586d",
+    "research/research-2026-10-31/三步研究结果.md": "35dc140bf21eb1714d293fafc9b7922ad775b5b55aac5e3d3de54d7560425c36",
+    "research/research-2026-10-31/图表示规范与案例.md": "ee9730dc0d4710528ebfaf3700880e90fe1af307a0373de69c95c53547fe1972"
+  }
+}

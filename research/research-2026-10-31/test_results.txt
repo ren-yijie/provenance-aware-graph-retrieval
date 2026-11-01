@@ -1,0 +1,13 @@
+test_alias_does_not_invent_law_firm_phrase (__main__.MechanismTests) ... ok
+test_alias_recovers_actual_q007_path_only (__main__.MechanismTests) ... ok
+test_curly_possessive (__main__.MechanismTests) ... ok
+test_no_semantic_or_substring_broadening (__main__.MechanismTests) ... ok
+test_overlay_deterministic_preserves_inputs (__main__.MechanismTests) ... ok
+test_possessive_does_not_change_candidates (__main__.MechanismTests) ... ok
+test_possessive_span_original_coordinates (__main__.MechanismTests) ... ok
+test_validation_contract (__main__.MechanismTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.261s
+
+OK

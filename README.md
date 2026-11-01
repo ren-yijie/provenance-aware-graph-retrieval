@@ -49,6 +49,10 @@ Micro retrieval metrics below use the 25 answerable questions; correct abstentio
 
 The complete outputs are in [the validated v1 result directory](results/v1.0.0/).
 
+### Phase II follow-up analysis
+
+[Phase II research](research/README.md) adds a per-question audit, graph representation case studies, and isolated mechanism experiments with reproducible traces. The original 30 questions remain a diagnostic set; the 16 additional questions are post-hoc development checks, **not an independent held-out test**. Experimental gains and regressions are recorded separately from the frozen v1 results. No experimental variant replaces the official benchmark methods.
+
 ## 6. Interpretation
 
 BM25 achieved the highest F1 on this small, entity-heavy synthetic benchmark. Provenance filtering reduced graph false positives from 21 to 13 and raised precision from 47.5% to 56.7%, but it also reduced true positives and recall. Its F1 did not improve over the unweighted graph baseline. Both graph methods correctly abstained on all five unanswerable questions; neither text method did.
@@ -113,6 +117,8 @@ python scripts/generate_result_charts.py \
 | `tests/` | Integrity and behavioral tests |
 | `docs/` | Preregistration, integrity evidence, methodology, and chart assets |
 | `results/v1.0.0/` | Frozen validated v1 outputs and reports |
+| `research/` | Phase II audits, representation specification, protocols and post-hoc experimental results |
+| `scripts/reproduce_phase2.py` | Reproduces Phase II in temporary storage and verifies archived results |
 | `demo/` | Earlier interactive portfolio prototype |
 
 ## 10. Limitations
