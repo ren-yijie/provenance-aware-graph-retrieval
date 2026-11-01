@@ -1,0 +1,433 @@
+{
+  "zero_seed": [
+    {
+      "id": "Q005",
+      "gold_count": 2,
+      "overlaps": []
+    },
+    {
+      "id": "Q006",
+      "gold_count": 3,
+      "overlaps": [
+        [
+          "Andreou Studio",
+          [
+            "studio"
+          ]
+        ],
+        [
+          "Studio Visit Scheduling",
+          [
+            "studio"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q008",
+      "gold_count": 3,
+      "overlaps": [
+        [
+          "Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Kessler Family Foundation",
+          [
+            "foundation"
+          ]
+        ],
+        [
+          "Philanthropic Foundation",
+          [
+            "foundation"
+          ]
+        ],
+        [
+          "Potential multi-year commitment tied to the public art programming budget",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Funding",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Programming Budget",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Boutique Restructuring Advisory",
+          [
+            "advisory"
+          ]
+        ],
+        [
+          "Lazard Restructuring Advisory Group",
+          [
+            "advisory"
+          ]
+        ],
+        [
+          "Endowment & Foundation Advisor",
+          [
+            "foundation"
+          ]
+        ],
+        [
+          "Institutional Advisory Business",
+          [
+            "advisory"
+          ]
+        ],
+        [
+          "Vanguard's institutional advisory business",
+          [
+            "advisory"
+          ]
+        ],
+        [
+          "Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Lazard's Middle East and North Africa advisory group",
+          [
+            "advisory"
+          ]
+        ],
+        [
+          "Middle East and North Africa Advisory Group",
+          [
+            "advisory"
+          ]
+        ],
+        [
+          "Art Acquisition Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Collection Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Philanthropic Foundation",
+          [
+            "foundation"
+          ]
+        ],
+        [
+          "The Drummond Foundation",
+          [
+            "foundation"
+          ]
+        ],
+        [
+          "Art Fundraising",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Collection Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Funding",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Acquisition Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Fundraising",
+          [
+            "art"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q010",
+      "gold_count": 2,
+      "overlaps": [
+        [
+          "Donor-Advised Fund",
+          [
+            "donor"
+          ]
+        ],
+        [
+          "donor-advised fund at the New York Community Trust",
+          [
+            "donor"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q011",
+      "gold_count": 2,
+      "overlaps": []
+    },
+    {
+      "id": "Q012",
+      "gold_count": 3,
+      "overlaps": [
+        [
+          "Donor-Advised Fund",
+          [
+            "donor"
+          ]
+        ],
+        [
+          "donor-advised fund at the New York Community Trust",
+          [
+            "donor"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q014",
+      "gold_count": 3,
+      "overlaps": [
+        [
+          "Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Potential multi-year commitment tied to the public art programming budget",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Funding",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Programming Budget",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Acquisition Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Collection Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Fundraising",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Collection Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Public Art Funding",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Acquisition Fund",
+          [
+            "art"
+          ]
+        ],
+        [
+          "Art Fundraising",
+          [
+            "art"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q017",
+      "gold_count": 3,
+      "overlaps": [
+        [
+          "Family Office",
+          [
+            "family"
+          ]
+        ],
+        [
+          "Kessler Family Foundation",
+          [
+            "family"
+          ]
+        ],
+        [
+          "Mid-Tier Cultivation Path",
+          [
+            "tier"
+          ]
+        ],
+        [
+          "mid-tier cultivation path",
+          [
+            "tier"
+          ]
+        ]
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "Q007",
+      "gold": [
+        [
+          "D0171",
+          "no_valid_evidence_path",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "Q009",
+      "gold": [
+        [
+          "D0067",
+          "no_valid_evidence_path",
+          true
+        ]
+      ]
+    },
+    {
+      "id": "Q015",
+      "gold": [
+        [
+          "D0794",
+          "no_valid_evidence_path",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "Q016",
+      "gold": [
+        [
+          "D0865",
+          "no_valid_evidence_path",
+          false
+        ],
+        [
+          "D0455",
+          "no_valid_evidence_path",
+          true
+        ]
+      ]
+    },
+    {
+      "id": "Q021",
+      "gold": [
+        [
+          "D0202",
+          "no_valid_evidence_path",
+          true
+        ]
+      ]
+    },
+    {
+      "id": "Q023",
+      "gold": [
+        [
+          "D0292",
+          "no_valid_evidence_path",
+          true
+        ]
+      ]
+    }
+  ],
+  "stages": {
+    "('unweighted_graph_v1', 'zero_seed')": 21,
+    "('provenance_graph_v1', 'zero_seed')": 21,
+    "('unweighted_graph_v1', 'rank_below_top3')": 7,
+    "('unweighted_graph_v1', 'not_reachable_within_2_hops')": 11,
+    "('provenance_graph_v1', 'provenance_excluded')": 7,
+    "('provenance_graph_v1', 'not_reachable_within_2_hops')": 11,
+    "('provenance_graph_v1', 'rank_below_top3')": 2
+  },
+  "tag_verified_files": 35
+}

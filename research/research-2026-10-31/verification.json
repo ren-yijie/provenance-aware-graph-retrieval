@@ -1,0 +1,14 @@
+{
+  "frozen_tracked_files_unchanged": 58,
+  "baseline_graph_rows_exactly_replayed": 60,
+  "experiment_rows": 276,
+  "supplementary_positive_questions": 12,
+  "supplementary_negative_questions": 4,
+  "input_protocol_and_implementation_hashes_match": true,
+  "summary_recalculated_from_276_rows": true,
+  "representation_facts": 210,
+  "mechanism_tests_passed": 8,
+  "original_suite_passed": 22,
+  "experiment_python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "initial_original_suite_issue": "System Python lacked numpy; resolved with preinstalled bundled Python; no dependency changes"
+}

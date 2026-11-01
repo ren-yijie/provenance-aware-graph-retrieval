@@ -1,0 +1,3519 @@
+{
+  "audit_date": "2026-10-30",
+  "head": "3a8933bc5345e2d8894eff6c3393358d55c7c387",
+  "release_tag_commit": "e6db910763592d24952b8e88cde18c2be0ff252a",
+  "replayed_graph_rows": 60,
+  "frozen_graph_traces_exact_match": true,
+  "tag_verified_files": [
+    "data/csv/csv_inventory.json",
+    "data/csv/entity_collisions.csv",
+    "data/csv/method_outputs.csv",
+    "data/csv/metrics_summary.csv",
+    "data/csv/pilot_data_quality.csv",
+    "data/csv/pilot_metrics.csv",
+    "data/csv/pilot_predictions.csv",
+    "data/csv/pilot_query_metrics.csv",
+    "data/csv/pilot_questions.csv",
+    "data/csv/pilot_relation_labels.csv",
+    "data/csv/pilot_sources.csv",
+    "data/csv/question_gold.csv",
+    "data/csv/source_index.csv",
+    "data/test_graph_slice.json",
+    "data/workbooks/final_50_source_evaluation_matrix.xlsx",
+    "data/workbooks/pilot_30_source_evaluation.xlsx",
+    "results/v1.0.0/aggregate_metrics.csv",
+    "results/v1.0.0/algorithm_preregistration_v1.md",
+    "results/v1.0.0/benchmark_integrity_report.md",
+    "results/v1.0.0/benchmark_report.md",
+    "results/v1.0.0/command_log.md",
+    "results/v1.0.0/error_analysis.md",
+    "results/v1.0.0/method_specifications.md",
+    "results/v1.0.0/per_query_results.csv",
+    "results/v1.0.0/provenance_traces.jsonl",
+    "results/v1.0.0/run_manifest.json",
+    "retrieval_benchmark/__init__.py",
+    "retrieval_benchmark/bm25.py",
+    "retrieval_benchmark/data.py",
+    "retrieval_benchmark/graph.py",
+    "retrieval_benchmark/metrics.py",
+    "retrieval_benchmark/runner.py",
+    "retrieval_benchmark/schema.py",
+    "retrieval_benchmark/text.py",
+    "retrieval_benchmark/vector.py"
+  ],
+  "input_sha256": {
+    "data/csv/csv_inventory.json": "24ff510d66d472630275df9589ad94916257e9a7ce2f9c3474dfc7a4d4c74c69",
+    "data/csv/entity_collisions.csv": "dc5ce38ea75739ab9e7c5b27db71e5b3aeba63efcd0b8d88eed4ad3df4332467",
+    "data/csv/method_outputs.csv": "91b99141a9024f210f0cfd5d5c523b8f099513309a858054f757a7db46788ecd",
+    "data/csv/metrics_summary.csv": "e8b56760c56936f90f6754a57da86410d2f36a590b34ad3194f2b34ea61a12b5",
+    "data/csv/pilot_data_quality.csv": "6226cd7097840e863a836d32620fe0c4265fcbf09944ed11fdeda84f3ad8ca0d",
+    "data/csv/pilot_metrics.csv": "f4ca6870bfdd0538011625889b52fc0b2ef8f351a9c02cd6a09981e0b539a937",
+    "data/csv/pilot_predictions.csv": "9e60f154eef3439ecd51952dd53ac371be6caf89194adf75e7294eb5bc906dfa",
+    "data/csv/pilot_query_metrics.csv": "61afec5bf25d282ed60cb22eb4ec9aa70fcddf97a9e1808692435e35f78bf392",
+    "data/csv/pilot_questions.csv": "4e68a07378120631f3147eb5db796ab9a481136c7cdee9b75efc4f79062a9172",
+    "data/csv/pilot_relation_labels.csv": "c178004307f1e2238c816005992508966ce55b41f8788571835decee3609ca22",
+    "data/csv/pilot_sources.csv": "b985620b4858734ee9ee92b316b67f1864a3214c9b531b24288fc0f35226c176",
+    "data/csv/question_gold.csv": "00526f656345caaa9497f6b3d4c5b7484d870d9f6d77ad9483d33d25d980ae67",
+    "data/csv/source_index.csv": "5fb32b1a91d676fd877c5ef6ec799c7ac83cc76379a2f3e6af95ea6b32f09a91",
+    "data/test_graph_slice.json": "bd6c8802a864b4599c064d34c01a5d8b460cb4f040bd8339f745bef8dcf61ad5",
+    "data/workbooks/final_50_source_evaluation_matrix.xlsx": "58d2a7d06ffe291baf30783ff97760bcdad7df6f1f2e2712f38bf9afa90385a7",
+    "data/workbooks/pilot_30_source_evaluation.xlsx": "296a7f2c92cd509b293029800daccfc4e94e3d919e23b158752000eee4318b8e",
+    "results/v1.0.0/aggregate_metrics.csv": "c449eb4d8a74f4ba1d844b5d10d0ec515ddec882564ab2f396f33accf188b579",
+    "results/v1.0.0/algorithm_preregistration_v1.md": "e63fff2345e947406ad0d8cbfa89abbb0a01c387660d179034077a83afa1ce7f",
+    "results/v1.0.0/benchmark_integrity_report.md": "545c5fc1aaf56b582bd518ce3f59257754cdb2814039b4f075475bdb4286d898",
+    "results/v1.0.0/benchmark_report.md": "15bc6b96287de94ea81ea3ddd5c723e95e2109b8b06568649fdcd51a49b33220",
+    "results/v1.0.0/command_log.md": "04aee93c83df3e35e1184b1b06265e87ae695742b0d179dd1ddfac349e8c1312",
+    "results/v1.0.0/error_analysis.md": "e3e081ddfa5c3ba17180c85c20324fc2bc334ab4b9d1e371734603626cd2ccf8",
+    "results/v1.0.0/method_specifications.md": "2ddc2def10d38cb7803155b0ef1b066045eb9a6c7056e7def4687b7d2c7949f1",
+    "results/v1.0.0/per_query_results.csv": "12a599b610303275ddaa4913cc528a8f784a30172e3e1922c26c11c4bf021b70",
+    "results/v1.0.0/provenance_traces.jsonl": "831d090aa3a1728345f08c7f9a04ea4a9d4affb42c5da04694412a1dcceb5221",
+    "results/v1.0.0/run_manifest.json": "e47ed5a7908e0d4391d8d1ac46bfdd1b0a5a14e5a97e69e31e38b1c0d134079e",
+    "retrieval_benchmark/__init__.py": "2ff5d7e0285a451999b8575fa53442839be70850a919a88e683aa096c04eafef",
+    "retrieval_benchmark/bm25.py": "cdd819d446afc817950762f302ccb5c848d7f21a86b9b26fd5e1f47e77cb646d",
+    "retrieval_benchmark/data.py": "392997c9feeab9fbd1490b0d0969e6a4d7b269767e0dd24b7b1d00f6fb42a97b",
+    "retrieval_benchmark/graph.py": "066fc78b9c0d8e8fb0c28591f3687bc951e57296559f1afa4bfd768ca9a771b8",
+    "retrieval_benchmark/metrics.py": "8632be4b1b061a1350046bdccb3613959540e9e3e53adb7572df7f7c68af74de",
+    "retrieval_benchmark/runner.py": "27ca0c01d712013490239fc522b3ec10aaebe1e4c3cb7df1f8db7aa65015bde0",
+    "retrieval_benchmark/schema.py": "d2d28b6d2a1f2c7a814ebfc2230e17e5daf28f7dcdc5bbe597b89e441fa763f7",
+    "retrieval_benchmark/text.py": "a3090a36bbbaf16c879d570c6fae7c73badd1e0384c7552465f91000ecb77680",
+    "retrieval_benchmark/vector.py": "867e09e8d286727b8d0d6d1be9b689e6d373220206dcdccaf24b54115ec7fb3d"
+  },
+  "zero_seed": [
+    {
+      "query_id": "Q005",
+      "question": "Which two profiles have names beginning with Kwame Asante, and how do their roles differ?",
+      "query_tokens": [
+        "two",
+        "profiles",
+        "names",
+        "beginning",
+        "kwame",
+        "asante",
+        "roles",
+        "differ"
+      ],
+      "seed_count": 0,
+      "candidate_count": 0,
+      "alias_overlaps": [],
+      "gold": [
+        {
+          "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+          "donor_id": "D0124",
+          "name": "Kwame Asante",
+          "content": "Kwame Asante is a cardiologist and professor of medicine at Weill Cornell Medical College, where he also directs a research lab focused on cardiac imaging. He grew up in the Bronx and did his undergraduate work at Howard University before medical school at Columbia. Kwame and his wife Ama live in Park Slope with their daughter, who attends Brooklyn Friends School. He is passionate about art as a form of resistance and narrative, and his collecting interests center on Basquiat-era Neo-Expressionism and Kerry James Marshall's figurative work. He owns two Marshall prints acquired through the Studio Museum's benefit auction and has attended every Studio Museum benefit for the past eight years. He is also a board member of the Studio Museum in Harlem. Kwame attended Art Basel Miami Beach in 2024 for the first time and connected with our development associate there. He supports several arts organizations through a donor-advised fund at the New York Community Trust. He runs — completed the Chicago Marathon in October 2024, his fifth marathon — and coaches a youth running program in Brownsville. Diana Flores manages this relationship. Potential to grow from annual to mid-tier with focused cultivation.",
+          "metadata": {
+            "donor_id": "D0124",
+            "name": "Kwame Asante",
+            "age": 46,
+            "location": "Park Slope, Brooklyn, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_1c3175ed30594f65b3a8591473d905aa",
+              "node_type": "Discovered_entity",
+              "name": "donor-advised fund at the New York Community Trust",
+              "edge_id": "EDGE_8822e2b1068b450dbdc4f562d2abc30e"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_07d47bea6aab444da70c50c215cf1e4e",
+          "donor_id": "D0559",
+          "name": "Kwame Asante-Brown",
+          "content": "Kwame Asante-Brown is a Chicago-based venture capitalist, a partner at Midway Ventures focused on climate technology. Ghanaian-American, he grew up on the South Side of Chicago and attended Northwestern for his undergraduate degree and MIT for his MBA. He maintains a close relationship with New York's art world through his sister, a gallery director in Chelsea, who first introduced him to the museum. He collects Neo-Expressionism with particular focus on Kerry James Marshall and Keith Haring: he owns two Marshall prints and an early Haring tarp painting acquired through the Estate. He attended Art Basel Miami in 2022 and 2024. He has given $5,000 in each of the last two years. Diana Flores manages the relationship. Despite his Chicago base, he visits New York five to seven times per year and has attended three museum events in 2024. His long-term giving potential is high given his career. A mid-tier cultivation path is appropriate; the next ask should be $12,000–$15,000.",
+          "metadata": {
+            "donor_id": "D0559",
+            "name": "Kwame Asante-Brown",
+            "age": 43,
+            "location": "Chicago, IL",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_63ddd5f5b81e40b4bf99a9f840b2f1c0",
+              "node_type": "Discovered_entity",
+              "name": "mid-tier cultivation path",
+              "edge_id": "EDGE_a84ab2caea4f4b218c5fe1812affb8d3"
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+            "SRC_07d47bea6aab444da70c50c215cf1e4e",
+            "SRC_8170175835fa4ff2bce4dae447fb7688"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+            "SRC_07d47bea6aab444da70c50c215cf1e4e",
+            "SRC_d94ae1c2c8e241cd9e0209b0859a15f6"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        }
+      }
+    },
+    {
+      "query_id": "Q006",
+      "question": "Which donors are explicitly described as board members or trustees of the Studio Museum in Harlem?",
+      "query_tokens": [
+        "donors",
+        "explicitly",
+        "described",
+        "board",
+        "members",
+        "trustees",
+        "studio",
+        "museum",
+        "harlem"
+      ],
+      "seed_count": 0,
+      "candidate_count": 0,
+      "alias_overlaps": [
+        {
+          "node_id": "DISC_56fca8c2fec34d179f314390fee379fc",
+          "node_name": "Sophia Andreou",
+          "alias": "Andreou Studio",
+          "shared_tokens": [
+            "studio"
+          ],
+          "alias_tokens": [
+            "andreou",
+            "studio"
+          ]
+        },
+        {
+          "node_id": "DISC_59e86d54524b47bea1672b781ea59db2",
+          "node_name": "mid-level ask in the $25K range",
+          "alias": "Studio Visit Scheduling",
+          "shared_tokens": [
+            "studio"
+          ],
+          "alias_tokens": [
+            "studio",
+            "visit",
+            "scheduling"
+          ]
+        }
+      ],
+      "gold": [
+        {
+          "source_id": "SRC_05424f4340bd4183b43e9b0526e2a595",
+          "donor_id": "D0425",
+          "name": "Winston Akpan",
+          "content": "Winston Akpan is a 49-year-old private equity partner at Apollo Global Management, where he focuses on consumer and media sector buyouts. Originally from Abuja and educated at Oxford and Harvard Business School, he has been in New York for fifteen years and lives in a townhouse in Brooklyn Heights. His wife, a corporate attorney at Sullivan & Cromwell, is also a museum donor. Winston's collecting interests center on Abstract Expressionism and West African contemporary art — he owns a Pollock work on paper, a Motherwell small canvas, and several works by contemporary Nigerian artists including Njideka Akunyili Crosby. He attended Art Basel Basel in June and Art Basel Miami in December. He serves as a trustee of the Studio Museum in Harlem, a role he has held for four years. His giving to this museum is at the mid tier; Priya Mehta manages the relationship. The household's combined philanthropic capacity is significant, and the museum should consider approaching the couple jointly. A $50,000 ask for the African diaspora contemporary art initiative is appropriate for this cycle. Winston is highly responsive to peer cultivation — a dinner with two other trustees from comparable institutions would be effective. Note that his wife's Sullivan & Cromwell connection overlaps with another donor in the portfolio.",
+          "metadata": {
+            "donor_id": "D0425",
+            "name": "Winston Akpan",
+            "age": 49,
+            "location": "Brooklyn Heights, Brooklyn, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Priya Mehta"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_00175a73c78b45be8a30d711632c8a12",
+              "node_type": "Discovered_entity",
+              "name": "Wife, corporate attorney at Sullivan & Cromwell",
+              "edge_id": "EDGE_e3e00eb960404502ae00475b591f2a0f"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+          "donor_id": "D0124",
+          "name": "Kwame Asante",
+          "content": "Kwame Asante is a cardiologist and professor of medicine at Weill Cornell Medical College, where he also directs a research lab focused on cardiac imaging. He grew up in the Bronx and did his undergraduate work at Howard University before medical school at Columbia. Kwame and his wife Ama live in Park Slope with their daughter, who attends Brooklyn Friends School. He is passionate about art as a form of resistance and narrative, and his collecting interests center on Basquiat-era Neo-Expressionism and Kerry James Marshall's figurative work. He owns two Marshall prints acquired through the Studio Museum's benefit auction and has attended every Studio Museum benefit for the past eight years. He is also a board member of the Studio Museum in Harlem. Kwame attended Art Basel Miami Beach in 2024 for the first time and connected with our development associate there. He supports several arts organizations through a donor-advised fund at the New York Community Trust. He runs — completed the Chicago Marathon in October 2024, his fifth marathon — and coaches a youth running program in Brownsville. Diana Flores manages this relationship. Potential to grow from annual to mid-tier with focused cultivation.",
+          "metadata": {
+            "donor_id": "D0124",
+            "name": "Kwame Asante",
+            "age": 46,
+            "location": "Park Slope, Brooklyn, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_1c3175ed30594f65b3a8591473d905aa",
+              "node_type": "Discovered_entity",
+              "name": "donor-advised fund at the New York Community Trust",
+              "edge_id": "EDGE_8822e2b1068b450dbdc4f562d2abc30e"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_67fcc1ef6eaa4d7faf93e8b31f914bab",
+          "donor_id": "D0975",
+          "name": "Raymond Osei",
+          "content": "Raymond Osei is a 49-year-old managing director at JPMorgan Asset Management, overseeing a multi-strategy institutional portfolio. He spent four years at Goldman Sachs in equity research before joining JPMorgan. Raymond lives in Scarsdale and commutes daily. He and his wife Abena are enthusiastic patrons of the arts. Raymond collects works by Basquiat-era artists and Kerry James Marshall — he attended the museum's Marshall retrospective lecture and requested a private follow-up viewing of the museum's Marshall holdings, which took place last fall. He is a board member of the Studio Museum in Harlem. Raymond supports the museum at the mid-tier level and has given consistently for six years. Michael Torres manages the relationship. Cultivation note: Raymond's dual board engagement (Studio Museum and active here) creates a natural bridge for a leadership gift conversation — a trustee nomination should be explored in parallel with an upgrade ask at the $75,000 level. He is analytical and responds best to data-supported impact narratives.",
+          "metadata": {
+            "donor_id": "D0975",
+            "name": "Raymond Osei",
+            "age": 49,
+            "location": "Scarsdale, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Michael Torres"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_b449cca1947744bb9b2379df1c714604",
+              "node_type": "Discovered_entity",
+              "name": "Raymond Osei",
+              "edge_id": "EDGE_1aab8cc45a104c83a12946e5dda87713"
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_41567911c8b045bd8dd0e55e8e69a06b",
+            "SRC_05424f4340bd4183b43e9b0526e2a595",
+            "SRC_67fcc1ef6eaa4d7faf93e8b31f914bab"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 1
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_67fcc1ef6eaa4d7faf93e8b31f914bab",
+            "SRC_fd700683d4cb4511aec4a0b3f4752e22",
+            "SRC_ed547720efc542e09abb139fcb3e0d12"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        }
+      }
+    },
+    {
+      "query_id": "Q008",
+      "question": "Which donors serve on the board or advisory board of the Dia Art Foundation?",
+      "query_tokens": [
+        "donors",
+        "serve",
+        "board",
+        "advisory",
+        "board",
+        "dia",
+        "art",
+        "foundation"
+      ],
+      "seed_count": 0,
+      "candidate_count": 0,
+      "alias_overlaps": [
+        {
+          "node_id": "CONCEPT_d241806e3252431eb427089ed2e74e12",
+          "node_name": "Art Fund",
+          "alias": "Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_f39abca30f374014bebddcd96fd20893",
+          "node_name": "Kessler Family Foundation",
+          "alias": "Kessler Family Foundation",
+          "shared_tokens": [
+            "foundation"
+          ],
+          "alias_tokens": [
+            "kessler",
+            "family",
+            "foundation"
+          ]
+        },
+        {
+          "node_id": "DISC_f39abca30f374014bebddcd96fd20893",
+          "node_name": "Kessler Family Foundation",
+          "alias": "Philanthropic Foundation",
+          "shared_tokens": [
+            "foundation"
+          ],
+          "alias_tokens": [
+            "philanthropic",
+            "foundation"
+          ]
+        },
+        {
+          "node_id": "DISC_bd580137ce594efd82484648686bfbc9",
+          "node_name": "Potential multi-year commitment tied to the public art programming budget",
+          "alias": "Potential multi-year commitment tied to the public art programming budget",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "potential",
+            "multi",
+            "year",
+            "commitment",
+            "tied",
+            "public",
+            "art",
+            "programming",
+            "budget"
+          ]
+        },
+        {
+          "node_id": "DISC_bd580137ce594efd82484648686bfbc9",
+          "node_name": "Potential multi-year commitment tied to the public art programming budget",
+          "alias": "Public Art Funding",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "funding"
+          ]
+        },
+        {
+          "node_id": "DISC_bd580137ce594efd82484648686bfbc9",
+          "node_name": "Potential multi-year commitment tied to the public art programming budget",
+          "alias": "Public Art Programming Budget",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "programming",
+            "budget"
+          ]
+        },
+        {
+          "node_id": "DISC_32b05fa17f9f4fb0b89dc85ebb4c8a36",
+          "node_name": "Tariq Al-Rashid",
+          "alias": "Boutique Restructuring Advisory",
+          "shared_tokens": [
+            "advisory"
+          ],
+          "alias_tokens": [
+            "boutique",
+            "restructuring",
+            "advisory"
+          ]
+        },
+        {
+          "node_id": "DISC_ce996d2857d146c4b00b58f0b38e6b56",
+          "node_name": "Victoria Huang",
+          "alias": "Lazard Restructuring Advisory Group",
+          "shared_tokens": [
+            "advisory"
+          ],
+          "alias_tokens": [
+            "lazard",
+            "restructuring",
+            "advisory",
+            "group"
+          ]
+        },
+        {
+          "node_id": "DISC_6647994881d04506a4c3dcac45f649e1",
+          "node_name": "Vanguard's institutional advisory business",
+          "alias": "Endowment & Foundation Advisor",
+          "shared_tokens": [
+            "foundation"
+          ],
+          "alias_tokens": [
+            "endowment",
+            "foundation",
+            "advisor"
+          ]
+        },
+        {
+          "node_id": "DISC_6647994881d04506a4c3dcac45f649e1",
+          "node_name": "Vanguard's institutional advisory business",
+          "alias": "Institutional Advisory Business",
+          "shared_tokens": [
+            "advisory"
+          ],
+          "alias_tokens": [
+            "institutional",
+            "advisory",
+            "business"
+          ]
+        },
+        {
+          "node_id": "DISC_6647994881d04506a4c3dcac45f649e1",
+          "node_name": "Vanguard's institutional advisory business",
+          "alias": "Vanguard's institutional advisory business",
+          "shared_tokens": [
+            "advisory"
+          ],
+          "alias_tokens": [
+            "vanguard",
+            "s",
+            "institutional",
+            "advisory",
+            "business"
+          ]
+        },
+        {
+          "node_id": "DISC_7e0f6c98e45e4ecf9102cac7fd07122e",
+          "node_name": "contemporary photography acquisitions fund",
+          "alias": "Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_9103df14bfe34c3d90fff8d82dd9f62f",
+          "node_name": "Lazard's Middle East and North Africa advisory group",
+          "alias": "Lazard's Middle East and North Africa advisory group",
+          "shared_tokens": [
+            "advisory"
+          ],
+          "alias_tokens": [
+            "lazard",
+            "s",
+            "middle",
+            "east",
+            "north",
+            "africa",
+            "advisory",
+            "group"
+          ]
+        },
+        {
+          "node_id": "DISC_9103df14bfe34c3d90fff8d82dd9f62f",
+          "node_name": "Lazard's Middle East and North Africa advisory group",
+          "alias": "Middle East and North Africa Advisory Group",
+          "shared_tokens": [
+            "advisory"
+          ],
+          "alias_tokens": [
+            "middle",
+            "east",
+            "north",
+            "africa",
+            "advisory",
+            "group"
+          ]
+        },
+        {
+          "node_id": "DISC_43e06d2940a042d7a4d1776797731925",
+          "node_name": "abstract expressionism acquisitions fund",
+          "alias": "Art Acquisition Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "acquisition",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_1aee41e818de49589187f8236252a28d",
+          "node_name": "$35,000 ask",
+          "alias": "Art Collection Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "collection",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_4a45be8f38584efcb82ee57c5c7ba9e7",
+          "node_name": "African photography acquisitions fund",
+          "alias": "Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_322f172eb89f4dcea4d326b75a991c01",
+          "node_name": "The Drummond Foundation",
+          "alias": "Philanthropic Foundation",
+          "shared_tokens": [
+            "foundation"
+          ],
+          "alias_tokens": [
+            "philanthropic",
+            "foundation"
+          ]
+        },
+        {
+          "node_id": "DISC_322f172eb89f4dcea4d326b75a991c01",
+          "node_name": "The Drummond Foundation",
+          "alias": "The Drummond Foundation",
+          "shared_tokens": [
+            "foundation"
+          ],
+          "alias_tokens": [
+            "drummond",
+            "foundation"
+          ]
+        },
+        {
+          "node_id": "DISC_63ddd5f5b81e40b4bf99a9f840b2f1c0",
+          "node_name": "mid-tier cultivation path",
+          "alias": "Art Fundraising",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fundraising"
+          ]
+        },
+        {
+          "node_id": "DISC_a4efe0b341b340d88a86ed61d0bb719a",
+          "node_name": "Mural commission",
+          "alias": "Public Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_f19f19e586334dcc928b565823a105ba",
+          "node_name": "Art Collection Fund",
+          "alias": "Art Collection Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "collection",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_eb9ce9e059824a6b8fd59cd7ccaac4e5",
+          "node_name": "Public Art Fund",
+          "alias": "Public Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_dcd5afb8167d40f29889842fe5409531",
+          "node_name": "Public Art Funding",
+          "alias": "Public Art Funding",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "funding"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_09cb60c62dbb44e4a1aa61a67aa3c191",
+          "node_name": "Art Acquisition Fund",
+          "alias": "Art Acquisition Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "acquisition",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_2d93871a75bf4623bbbd6fa6a2b9bdf4",
+          "node_name": "Art Fundraising",
+          "alias": "Art Fundraising",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fundraising"
+          ]
+        }
+      ],
+      "gold": [
+        {
+          "source_id": "SRC_05c73e6a1a964f5bac6d06fdd4468454",
+          "donor_id": "D0091",
+          "name": "Rosemary Cavendish",
+          "content": "Rosemary Cavendish is a private wealth advisor at a boutique family office serving ultra-high-net-worth clients in New York and London. She spent fifteen years at Goldman Sachs's private wealth management division before joining her current firm as a managing partner. Rosemary and her husband Geoffrey, a retired art dealer, live in a large apartment on the Upper East Side and have a weekend house in Litchfield, Connecticut. Their collection, guided by Geoffrey's expertise, is significant: it includes works by Color Field painters, mid-century photographs, and several major Abstract Expressionist works on paper. Rosemary sits on the museum's finance committee and serves on the advisory board of the Dia Art Foundation. Geoffrey has been a quiet advisor to the museum's acquisitions committee and participates in dealer advisory conversations. James Reuter manages the primary relationship with Rosemary. The family does not have a foundation but gives through a substantial donor-advised fund. Major gift potential; the director should attend the next lunch scheduled with Geoffrey.",
+          "metadata": {
+            "donor_id": "D0091",
+            "name": "Rosemary Cavendish",
+            "age": 57,
+            "location": "Upper East Side, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "James Reuter"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_2c250e3ebc084b6b9b35daa036a105ce",
+              "node_type": "Discovered_entity",
+              "name": "Goldman Sachs's private wealth management division",
+              "edge_id": "EDGE_cc9459fcda4c47e1b8f27a83ca62e81b"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+          "donor_id": "D0488",
+          "name": "James Osei-Bonsu",
+          "content": "James Osei-Bonsu is a 55-year-old managing director in Goldman Sachs's private wealth management division, where he advises ultra-high-net-worth families on multi-generational wealth planning. He joined Goldman from Morgan Stanley twenty years ago. He lives in a townhouse in the West Village with his husband, an architect. James is a sophisticated and long-tenured museum donor who upgraded to major giving three years ago. His collecting interests span Abstract Expressionism and contemporary West African art — he owns a significant work by Clyfford Still and has been building a collection of Ghanaian and Nigerian contemporary artists. He attended Art Basel Basel and Art Basel Miami Beach in the same year for the first time last cycle. James is a board member of the Dia Art Foundation and gives through the Osei-Bonsu Family Foundation, which he and his husband established five years ago. Cultivation note: key relationship — significant additional gift potential. Sarah Okafor to schedule a quarterly check-in and discuss a five-year pledging commitment.",
+          "metadata": {
+            "donor_id": "D0488",
+            "name": "James Osei-Bonsu",
+            "age": 55,
+            "location": "West Village, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "Sarah Okafor"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_2c250e3ebc084b6b9b35daa036a105ce",
+              "node_type": "Discovered_entity",
+              "name": "Goldman Sachs's private wealth management division",
+              "edge_id": "EDGE_43f7e6c8f7c443dba15f1e635dd859af"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_e49f23a212284b8fad2b8f1a4a84341d",
+          "donor_id": "D0350",
+          "name": "Rachel Bloom-Finkelstein",
+          "content": "Rachel Bloom-Finkelstein is a partner at Sullivan & Cromwell in the private equity and M&A practice. She joined S&C directly from Columbia Law eighteen years ago and has been a partner for six years. She lives on the Upper West Side with her husband and twin sons. She collects Minimalism — she owns three Donald Judd stacks acquired over a decade and a Robert Irwin scrim installation currently on loan to a museum in Connecticut. She attended the museum's Minimalism symposium and the Judd Foundation benefit gala in the same season. She is on the board of the Dia Art Foundation and chairs their development committee. She skis in Aspen every spring break with her family, staying at a house they co-own with another family. Relationship manager note: Priya Mehta manages this relationship. Rachel gives $50,000 annually, primarily to Dia Art Foundation, with $15,000 to this museum. An upgrade conversation emphasizing the Minimalism collection synergy is appropriate. Target $40,000 for next year's ask.",
+          "metadata": {
+            "donor_id": "D0350",
+            "name": "Rachel Bloom-Finkelstein",
+            "age": 46,
+            "location": "Upper West Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Priya Mehta"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_2613bf7c29474299bdca19381c464202",
+              "node_type": "Discovered_entity",
+              "name": "Rachel Bloom-Finkelstein",
+              "edge_id": "EDGE_392513870cf744299a45a3c3c2f1e35f"
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_05c73e6a1a964f5bac6d06fdd4468454",
+            "SRC_e49f23a212284b8fad2b8f1a4a84341d",
+            "SRC_d94ae1c2c8e241cd9e0209b0859a15f6"
+          ],
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+            "SRC_fd700683d4cb4511aec4a0b3f4752e22",
+            "SRC_e49f23a212284b8fad2b8f1a4a84341d"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 1
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        }
+      }
+    },
+    {
+      "query_id": "Q010",
+      "question": "Which donor profiles explicitly mention completing an Ironman triathlon?",
+      "query_tokens": [
+        "donor",
+        "profiles",
+        "explicitly",
+        "mention",
+        "completing",
+        "ironman",
+        "triathlon"
+      ],
+      "seed_count": 0,
+      "candidate_count": 0,
+      "alias_overlaps": [
+        {
+          "node_id": "DISC_1c3175ed30594f65b3a8591473d905aa",
+          "node_name": "donor-advised fund at the New York Community Trust",
+          "alias": "Donor-Advised Fund",
+          "shared_tokens": [
+            "donor"
+          ],
+          "alias_tokens": [
+            "donor",
+            "advised",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_1c3175ed30594f65b3a8591473d905aa",
+          "node_name": "donor-advised fund at the New York Community Trust",
+          "alias": "donor-advised fund at the New York Community Trust",
+          "shared_tokens": [
+            "donor"
+          ],
+          "alias_tokens": [
+            "donor",
+            "advised",
+            "fund",
+            "new",
+            "york",
+            "community",
+            "trust"
+          ]
+        }
+      ],
+      "gold": [
+        {
+          "source_id": "SRC_19d8b205b26b4f32a7345cfbff2497b3",
+          "donor_id": "D0481",
+          "name": "Elena Sorokina",
+          "content": "Elena Sorokina is a 59-year-old managing director at Lazard Asset Management, where she heads the fixed income quantitative strategies group. She began her career at Vanguard in Philadelphia and joined Lazard after completing an MBA at Chicago Booth. She lives in a large apartment in Midtown East. Elena's collecting interests center on contemporary photography — she has built a serious collection focused on Andreas Gursky and has recently acquired a work by Richard Avedon from an estate sale. She attended Frieze London last October and Art Basel Basel in June. Elena serves on the board of the New York Philharmonic and gives through a donor-advised fund. She has been giving at the mid level here for three years. She is an avid triathlete and completed Ironman Kona last October, finishing in the top quarter of her age group — a remarkable achievement at her age. Cultivation note: very driven personality; responds to excellence and prestige. James Reuter to propose a recognition event and explore a mid-to-major upgrade conversation around the music and sound art programming.",
+          "metadata": {
+            "donor_id": "D0481",
+            "name": "Elena Sorokina",
+            "age": 59,
+            "location": "Midtown East, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "James Reuter"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_5f9866c59c834a1a97040a02afd3d826",
+              "node_type": "Discovered_entity",
+              "name": "Lazard Asset Management",
+              "edge_id": "EDGE_1d1234f119234211bb1ce907c884aa9f"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_3eb47f960df3449dbbe351b22974189b",
+          "donor_id": "D0681",
+          "name": "Isabel Castillo-Vargas",
+          "content": "Isabel Castillo-Vargas is a managing director at a technology-focused growth equity firm in Midtown, having joined from a product management role at a major fintech platform. She completed her MBA at Columbia Business School and grew up in Los Angeles, where her family is still based. Isabel lives in a high-floor apartment in Midtown with views of the Hudson. Her collecting interest is contemporary figurative painting — she discovered Eric Fischl through a museum exhibition three years ago and has since acquired two of his works. She has been tracking Jenny Saville and Nicole Eisenman closely and attended Art Basel Miami Beach last December specifically to explore figurative work. She participates in a women's triathlon group and completed Ironman Lake Placid last August. She is a junior member of the Public Art Fund's associates circle and has expressed interest in growing her museum involvement alongside her philanthropic profile more broadly. Annual fund ask of $4,500, with a note to consider her for the Young Leaders Council forming in 2027.",
+          "metadata": {
+            "donor_id": "D0681",
+            "name": "Isabel Castillo-Vargas",
+            "age": 38,
+            "location": "Midtown, New York, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_e885f593d5e44837a77f25de94b103db",
+              "node_type": "Discovered_entity",
+              "name": "Managing Director at a technology-focused growth equity firm",
+              "edge_id": "EDGE_dd7db66fff5848a8ab79fa4825f9a4d7"
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_19d8b205b26b4f32a7345cfbff2497b3",
+            "SRC_3eb47f960df3449dbbe351b22974189b",
+            "SRC_cbf9e213476b4447a62ec10998109cd0"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_19d8b205b26b4f32a7345cfbff2497b3",
+            "SRC_3eb47f960df3449dbbe351b22974189b",
+            "SRC_e8dc328363f34b5f9187ffff3c41f8e4"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        }
+      }
+    },
+    {
+      "query_id": "Q011",
+      "question": "Which donors are explicitly described as having completed the Chicago Marathon?",
+      "query_tokens": [
+        "donors",
+        "explicitly",
+        "described",
+        "completed",
+        "chicago",
+        "marathon"
+      ],
+      "seed_count": 0,
+      "candidate_count": 0,
+      "alias_overlaps": [],
+      "gold": [
+        {
+          "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+          "donor_id": "D0124",
+          "name": "Kwame Asante",
+          "content": "Kwame Asante is a cardiologist and professor of medicine at Weill Cornell Medical College, where he also directs a research lab focused on cardiac imaging. He grew up in the Bronx and did his undergraduate work at Howard University before medical school at Columbia. Kwame and his wife Ama live in Park Slope with their daughter, who attends Brooklyn Friends School. He is passionate about art as a form of resistance and narrative, and his collecting interests center on Basquiat-era Neo-Expressionism and Kerry James Marshall's figurative work. He owns two Marshall prints acquired through the Studio Museum's benefit auction and has attended every Studio Museum benefit for the past eight years. He is also a board member of the Studio Museum in Harlem. Kwame attended Art Basel Miami Beach in 2024 for the first time and connected with our development associate there. He supports several arts organizations through a donor-advised fund at the New York Community Trust. He runs — completed the Chicago Marathon in October 2024, his fifth marathon — and coaches a youth running program in Brownsville. Diana Flores manages this relationship. Potential to grow from annual to mid-tier with focused cultivation.",
+          "metadata": {
+            "donor_id": "D0124",
+            "name": "Kwame Asante",
+            "age": 46,
+            "location": "Park Slope, Brooklyn, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_1c3175ed30594f65b3a8591473d905aa",
+              "node_type": "Discovered_entity",
+              "name": "donor-advised fund at the New York Community Trust",
+              "edge_id": "EDGE_8822e2b1068b450dbdc4f562d2abc30e"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_1e85ef4a27624583b2bbed5203988083",
+          "donor_id": "D0691",
+          "name": "Jasmine Oduya",
+          "content": "Jasmine Oduya is a managing director in Goldman Sachs's consumer and healthcare investment banking group. She grew up in Lagos, Nigeria, moved to London for university, and came to New York for her MBA at Columbia. She has been at Goldman for eight years and lives in a sleek apartment in the Financial District. Jasmine's collecting interests bridge contemporary African art and international photography — she owns works by Zanele Muholi and has been in active discussions about acquiring a large-format Taryn Simon photograph. She attended Frieze London every October and attended Frieze New York for the first time this past May. She is on the emerging leaders council of the Brooklyn Museum and attended their trustee dinner last year. Jasmine completed the Chicago Marathon last October, her first marathon, and is already registered for New York next November. She is 33 and still in the early arc of her philanthropic development, but her income trajectory and cultural commitments make her a priority cultivation target. Annual fund ask of $3,500, with a mid-level upgrade path over the next two cycles.",
+          "metadata": {
+            "donor_id": "D0691",
+            "name": "Jasmine Oduya",
+            "age": 33,
+            "location": "Financial District, New York, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Sarah Okafor"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_62aaf31954c04605aa822ae141a550e9",
+              "node_type": "Discovered_entity",
+              "name": "Goldman Sachs's consumer and healthcare investment banking group",
+              "edge_id": "EDGE_51f259efbf0e4325aaac879f7e866978"
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_1e85ef4a27624583b2bbed5203988083",
+            "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+            "SRC_c3f817b46752487499f5cbc776601946"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+            "SRC_1e85ef4a27624583b2bbed5203988083",
+            "SRC_3ac471dea79b40518de8e10ff9121d44"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        }
+      }
+    },
+    {
+      "query_id": "Q012",
+      "question": "Which donor profiles mention Newport-Bermuda participation on Hazel Run, Silverline, or Breakwater?",
+      "query_tokens": [
+        "donor",
+        "profiles",
+        "mention",
+        "newport",
+        "bermuda",
+        "participation",
+        "hazel",
+        "run",
+        "silverline",
+        "breakwater"
+      ],
+      "seed_count": 0,
+      "candidate_count": 0,
+      "alias_overlaps": [
+        {
+          "node_id": "DISC_1c3175ed30594f65b3a8591473d905aa",
+          "node_name": "donor-advised fund at the New York Community Trust",
+          "alias": "Donor-Advised Fund",
+          "shared_tokens": [
+            "donor"
+          ],
+          "alias_tokens": [
+            "donor",
+            "advised",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_1c3175ed30594f65b3a8591473d905aa",
+          "node_name": "donor-advised fund at the New York Community Trust",
+          "alias": "donor-advised fund at the New York Community Trust",
+          "shared_tokens": [
+            "donor"
+          ],
+          "alias_tokens": [
+            "donor",
+            "advised",
+            "fund",
+            "new",
+            "york",
+            "community",
+            "trust"
+          ]
+        }
+      ],
+      "gold": [
+        {
+          "source_id": "SRC_7d71e393a7e045b99266d9b05b499cb3",
+          "donor_id": "D0801",
+          "name": "Vikram Nair",
+          "content": "Vikram Nair is a managing director in Goldman Sachs's investment banking division, where he has worked for eleven years following a prior stint at JPMorgan Chase. He focuses primarily on technology M&A and has a particular interest in media sector transactions. Vikram began attending museum preview evenings in 2021 through a colleague referral and has since come to three curator-led gallery walkthroughs. He responded strongly to the museum's Franz Kline retrospective, citing a long-standing passion for Abstract Expressionism — he currently holds works by Kline and Lee Krasner acquired through Sotheby's and a private dealer in London. He and his wife Ananya live on the Upper East Side with their two school-age children. Outside of work Vikram races with a Swan 48 he co-owns called Breakwater in the Newport-Bermuda race; next year's campaign is already planned. He supports the Guggenheim Foundation as an annual donor. Cultivation note: Priya Mehta should schedule a studio visit before year-end; a mid-level ask in the $25K range is appropriate to test ceiling.",
+          "metadata": {
+            "donor_id": "D0801",
+            "name": "Vikram Nair",
+            "age": 44,
+            "location": "Upper East Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Priya Mehta"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_59e86d54524b47bea1672b781ea59db2",
+              "node_type": "Discovered_entity",
+              "name": "mid-level ask in the $25K range",
+              "edge_id": "EDGE_9326b43d60a0445b9e2d78a08eaaace7"
+            },
+            {
+              "node_id": "DISC_89524684b3234c2e8e7f4a111228acec",
+              "node_type": "Discovered_entity",
+              "name": "Vikram Nair",
+              "edge_id": "EDGE_203f349380054fc7ade59091584e6a9c"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_8170175835fa4ff2bce4dae447fb7688",
+          "donor_id": "D0179",
+          "name": "Nora Callahan",
+          "content": "Nora Callahan is a managing director at a long/short equity hedge fund based in Midtown, specializing in technology sector analysis. She was previously at Goldman Sachs in the equities division for seven years before moving to the buy side. Nora lives on the Upper West Side with her husband and two college-age children. She is a competitive sailor: she co-owns a Swan 48 named Silverline and competed in the Newport-Bermuda race in June, finishing fourth in her class. Sailing has connected her to a network of financially prominent collectors, several of whom she has introduced to the museum. Nora's collecting focus is Abstract Expressionism — she owns two Rothko works on paper and a de Kooning oil she acquired at Christie's in 2017. She attended Art Basel Basel last June, combining it with a European sailing trip. James Reuter manages the relationship and should propose naming the Abstract Expressionism study room at the $150,000 level — she has signaled readiness for a meaningful upgrade from her current mid-tier giving.",
+          "metadata": {
+            "donor_id": "D0179",
+            "name": "Nora Callahan",
+            "age": 54,
+            "location": "Upper West Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "James Reuter"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_cd0f805f4dbe40658b596804048fbb22",
+              "node_type": "Discovered_entity",
+              "name": "Technology sector analysis",
+              "edge_id": "EDGE_aa6ce297d06746fc9a2550f937d6d73d"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_e8dc328363f34b5f9187ffff3c41f8e4",
+          "donor_id": "D0150",
+          "name": "Richard Baxter-Oduya",
+          "content": "Richard Baxter-Oduya is a managing director at a large family office, the Horton Family Office, managing a $4 billion portfolio across public and private assets for a single family. He joined after eight years at BlackRock's multi-asset strategies group. Richard lives in a townhouse in the East Eighties with his wife Ngozi, a secondary school principal, and their two children. He has been a mid-level museum donor for four years and is on a clear trajectory toward major donor status. His collecting interests are in Abstract Expressionism, particularly Franz Kline and de Kooning; he made his first significant purchase — a de Kooning lithograph — at a Sotheby's sale in 2023 and has been actively building his knowledge since. He attended Art Basel Miami Beach in December 2024 for the first time and spent time with our staff at the VIP preview. Richard is a competitive offshore sailor — his 46-foot Baltic sloop, Hazel Run, completed the Newport-Bermuda race in June 2024. He also plays squash competitively at the Racquet and Tennis Club. James Reuter manages this relationship. Next step: an invitation to join the acquisitions committee would align with his interests and deepen institutional commitment.",
+          "metadata": {
+            "donor_id": "D0150",
+            "name": "Richard Baxter-Oduya",
+            "age": 44,
+            "location": "Upper East Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "James Reuter"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_a66f96b4200444ceb900c91d12dd2455",
+              "node_type": "Discovered_entity",
+              "name": "Richard Baxter-Oduya",
+              "edge_id": "EDGE_ae17bf0bf1e6458caf97bc9695d82f2a"
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_e8dc328363f34b5f9187ffff3c41f8e4",
+            "SRC_7d71e393a7e045b99266d9b05b499cb3",
+            "SRC_8170175835fa4ff2bce4dae447fb7688"
+          ],
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_e8dc328363f34b5f9187ffff3c41f8e4",
+            "SRC_8170175835fa4ff2bce4dae447fb7688",
+            "SRC_7d71e393a7e045b99266d9b05b499cb3"
+          ],
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        }
+      }
+    },
+    {
+      "query_id": "Q014",
+      "question": "Which donors both mention collecting Anne Truitt and attending Art Basel Miami or Miami Beach?",
+      "query_tokens": [
+        "donors",
+        "mention",
+        "collecting",
+        "anne",
+        "truitt",
+        "attending",
+        "art",
+        "basel",
+        "miami",
+        "miami",
+        "beach"
+      ],
+      "seed_count": 0,
+      "candidate_count": 0,
+      "alias_overlaps": [
+        {
+          "node_id": "CONCEPT_d241806e3252431eb427089ed2e74e12",
+          "node_name": "Art Fund",
+          "alias": "Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_bd580137ce594efd82484648686bfbc9",
+          "node_name": "Potential multi-year commitment tied to the public art programming budget",
+          "alias": "Potential multi-year commitment tied to the public art programming budget",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "potential",
+            "multi",
+            "year",
+            "commitment",
+            "tied",
+            "public",
+            "art",
+            "programming",
+            "budget"
+          ]
+        },
+        {
+          "node_id": "DISC_bd580137ce594efd82484648686bfbc9",
+          "node_name": "Potential multi-year commitment tied to the public art programming budget",
+          "alias": "Public Art Funding",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "funding"
+          ]
+        },
+        {
+          "node_id": "DISC_bd580137ce594efd82484648686bfbc9",
+          "node_name": "Potential multi-year commitment tied to the public art programming budget",
+          "alias": "Public Art Programming Budget",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "programming",
+            "budget"
+          ]
+        },
+        {
+          "node_id": "DISC_7e0f6c98e45e4ecf9102cac7fd07122e",
+          "node_name": "contemporary photography acquisitions fund",
+          "alias": "Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_43e06d2940a042d7a4d1776797731925",
+          "node_name": "abstract expressionism acquisitions fund",
+          "alias": "Art Acquisition Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "acquisition",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_1aee41e818de49589187f8236252a28d",
+          "node_name": "$35,000 ask",
+          "alias": "Art Collection Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "collection",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_4a45be8f38584efcb82ee57c5c7ba9e7",
+          "node_name": "African photography acquisitions fund",
+          "alias": "Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "DISC_63ddd5f5b81e40b4bf99a9f840b2f1c0",
+          "node_name": "mid-tier cultivation path",
+          "alias": "Art Fundraising",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fundraising"
+          ]
+        },
+        {
+          "node_id": "DISC_a4efe0b341b340d88a86ed61d0bb719a",
+          "node_name": "Mural commission",
+          "alias": "Public Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_f19f19e586334dcc928b565823a105ba",
+          "node_name": "Art Collection Fund",
+          "alias": "Art Collection Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "collection",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_eb9ce9e059824a6b8fd59cd7ccaac4e5",
+          "node_name": "Public Art Fund",
+          "alias": "Public Art Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_dcd5afb8167d40f29889842fe5409531",
+          "node_name": "Public Art Funding",
+          "alias": "Public Art Funding",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "public",
+            "art",
+            "funding"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_09cb60c62dbb44e4a1aa61a67aa3c191",
+          "node_name": "Art Acquisition Fund",
+          "alias": "Art Acquisition Fund",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "acquisition",
+            "fund"
+          ]
+        },
+        {
+          "node_id": "CONCEPT_2d93871a75bf4623bbbd6fa6a2b9bdf4",
+          "node_name": "Art Fundraising",
+          "alias": "Art Fundraising",
+          "shared_tokens": [
+            "art"
+          ],
+          "alias_tokens": [
+            "art",
+            "fundraising"
+          ]
+        }
+      ],
+      "gold": [
+        {
+          "source_id": "SRC_2f3c6a1b3c25481a8a6ee604ec4ef9b5",
+          "donor_id": "D0846",
+          "name": "Nadia Rousseau",
+          "content": "Nadia Rousseau is a deputy chief investment officer at a major university endowment, where she oversees real assets and alternative credit allocations. She previously worked at a sovereign wealth fund in Abu Dhabi and before that at Goldman Sachs's asset management division in New York and London. She holds a master's degree in finance from the London School of Economics. She and her partner live in Harlem and have recently become involved in arts initiatives in that community. Nadia has been a museum member for three years and attends consistently. Her collecting interests center on Minimalism and she has acquired two pieces through museum benefit auctions — an Anne Truitt work on paper and a Dan Flavin photographic documentation print. She attended Art Basel Miami Beach this year. She gives to the Harlem Stage arts organization and is considering board candidacy. Diana Flores manages the relationship. Nadia is a dedicated road cyclist and completed the Étape du Tour amateur stage race in France this summer. A mid-tier cultivation path is appropriate — a $10,000 ask tied to the Minimalism collection care fund is the planned approach.",
+          "metadata": {
+            "donor_id": "D0846",
+            "name": "Nadia Rousseau",
+            "age": 42,
+            "location": "Harlem, New York, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Diana Flores"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_63ddd5f5b81e40b4bf99a9f840b2f1c0",
+              "node_type": "Discovered_entity",
+              "name": "mid-tier cultivation path",
+              "edge_id": "EDGE_7608d185d8c24081b9fce9e68ef5d6d8"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+          "donor_id": "D0171",
+          "name": "Priscilla Ng",
+          "content": "Priscilla Ng is co-founder and CEO of a Series B SaaS company serving the architecture and engineering sectors, based in DUMBO. She launched the company in 2018 after a decade in product management at Autodesk and Bentley Systems. Priscilla lives in DUMBO and is deeply embedded in the Brooklyn tech and arts communities — she serves on the board of the Public Art Fund, attending monthly meetings in their Chelsea offices. Her collecting is focused on Minimalism: she has acquired works by Anne Truitt and Robert Irwin through gallery relationships developed over four years of attending art fairs, most recently Art Basel Miami and Frieze New York. She attended the museum's architecture and art symposium in April and met the director for the first time, expressing interest in the planned outdoor sculpture installation. Priya Mehta should schedule a follow-up to discuss an annual-to-mid upgrade and potential multi-year commitment tied to the public art programming budget.",
+          "metadata": {
+            "donor_id": "D0171",
+            "name": "Priscilla Ng",
+            "age": 42,
+            "location": "DUMBO, Brooklyn, NY",
+            "giving_tier": "annual",
+            "relationship_manager": "Priya Mehta"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_bd580137ce594efd82484648686bfbc9",
+              "node_type": "Discovered_entity",
+              "name": "Potential multi-year commitment tied to the public art programming budget",
+              "edge_id": "EDGE_c37da299b1284268b81c1a5ee67b359b"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_f3557925ad8347df8aea6f4b0fe3736b",
+          "donor_id": "D0616",
+          "name": "Raj Subramaniam",
+          "content": "Raj Subramaniam is a managing director at BlackRock in their multi-asset strategies group, having joined from Goldman Sachs asset management eight years ago. He lives on the Upper West Side with his wife Meera, a pediatric cardiologist at Columbia Presbyterian. They have two teenage daughters. Raj's collecting interest has evolved significantly over the past decade: he began with South Asian modernists and has moved toward Minimalism, acquiring works by Donald Judd and Anne Truitt. He attended Art Basel Miami last December and came away with a large-format photograph by Andreas Gursky. He joined the museum's Contemporaries giving circle two years ago and has attended four of the six annual events since. He and Meera attended the museum's Minimalism study day last March and he spoke enthusiastically about the Dan Flavin installation. The Subramaniam family established a small donor-advised fund at Fidelity Charitable that channels giving to arts and education causes. Priya has the relationship and should schedule a private viewing of the upcoming Judd-related materials in the collection. Potential ask: $15,000 for the acquisition endowment.",
+          "metadata": {
+            "donor_id": "D0616",
+            "name": "Raj Subramaniam",
+            "age": 49,
+            "location": "Upper West Side, New York, NY",
+            "giving_tier": "mid",
+            "relationship_manager": "Priya Mehta"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_840a93ff90d0482289efbdd783ff0ca3",
+              "node_type": "Discovered_entity",
+              "name": "Raj Subramaniam",
+              "edge_id": "EDGE_3b5d7f7678e748a29ef907a3dcb96f94"
+            },
+            {
+              "node_id": "DISC_932b9ae06cad4588af8deddce6aba7d3",
+              "node_type": "Discovered_entity",
+              "name": "multi-asset strategies group",
+              "edge_id": "EDGE_ffc8e621aa4145bfa4c58246360eeddd"
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+            "SRC_2f3c6a1b3c25481a8a6ee604ec4ef9b5",
+            "SRC_f3557925ad8347df8aea6f4b0fe3736b"
+          ],
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_3eb47f960df3449dbbe351b22974189b",
+            "SRC_e7fc70d2108f48148e5f9706036c0d54",
+            "SRC_f3557925ad8347df8aea6f4b0fe3736b"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        }
+      }
+    },
+    {
+      "query_id": "Q017",
+      "question": "Which major-tier donors managed by James Reuter or Sarah Okafor have named family foundations in their profiles?",
+      "query_tokens": [
+        "major",
+        "tier",
+        "donors",
+        "managed",
+        "james",
+        "reuter",
+        "sarah",
+        "okafor",
+        "named",
+        "family",
+        "foundations",
+        "profiles"
+      ],
+      "seed_count": 0,
+      "candidate_count": 0,
+      "alias_overlaps": [
+        {
+          "node_id": "DISC_a66f96b4200444ceb900c91d12dd2455",
+          "node_name": "Richard Baxter-Oduya",
+          "alias": "Family Office",
+          "shared_tokens": [
+            "family"
+          ],
+          "alias_tokens": [
+            "family",
+            "office"
+          ]
+        },
+        {
+          "node_id": "DISC_f39abca30f374014bebddcd96fd20893",
+          "node_name": "Kessler Family Foundation",
+          "alias": "Kessler Family Foundation",
+          "shared_tokens": [
+            "family"
+          ],
+          "alias_tokens": [
+            "kessler",
+            "family",
+            "foundation"
+          ]
+        },
+        {
+          "node_id": "DISC_63ddd5f5b81e40b4bf99a9f840b2f1c0",
+          "node_name": "mid-tier cultivation path",
+          "alias": "Mid-Tier Cultivation Path",
+          "shared_tokens": [
+            "tier"
+          ],
+          "alias_tokens": [
+            "mid",
+            "tier",
+            "cultivation",
+            "path"
+          ]
+        },
+        {
+          "node_id": "DISC_63ddd5f5b81e40b4bf99a9f840b2f1c0",
+          "node_name": "mid-tier cultivation path",
+          "alias": "mid-tier cultivation path",
+          "shared_tokens": [
+            "tier"
+          ],
+          "alias_tokens": [
+            "mid",
+            "tier",
+            "cultivation",
+            "path"
+          ]
+        }
+      ],
+      "gold": [
+        {
+          "source_id": "SRC_b940430c90694a15b8d27ebc539db542",
+          "donor_id": "D0154",
+          "name": "Peter Kessler",
+          "content": "Peter Kessler is a retired hedge fund manager who ran a market-neutral equity fund, Kessler Capital Management, for seventeen years before closing it in 2020 to manage his personal assets. He and his wife Ellen live in a duplex penthouse on the Upper West Side and have a summer home in Edgartown, Martha's Vineyard. Peter has been a major donor since 2015 and is a member of the director's leadership circle. His collecting interests are broad and eclectic — he has significant holdings in Abstract Expressionism, particularly Rothko and Pollock, as well as important contemporary photography including a large Gursky print purchased at Phillips in 2018. He attended Art Basel Basel annually for twelve years and has strong relationships with several major galleries. The Kessler Family Foundation supports the museum, the Whitney Museum Council, and Jazz at Lincoln Center. He plays competitive tennis at the USTA 4.5 level through his New York Athletic Club and has competed in club tournaments nationally. James Reuter manages this relationship in close coordination with the president. A campaign gift at the $2.5 million level is under active discussion. Kessler has expressed mild frustration with the pace of the museum's building renovation — this concern should be addressed proactively.",
+          "metadata": {
+            "donor_id": "D0154",
+            "name": "Peter Kessler",
+            "age": 61,
+            "location": "Upper West Side, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "James Reuter"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_f39abca30f374014bebddcd96fd20893",
+              "node_type": "Discovered_entity",
+              "name": "Kessler Family Foundation",
+              "edge_id": "EDGE_f3b7cbb9f98a42389b61a3ced557dd3f"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+          "donor_id": "D0488",
+          "name": "James Osei-Bonsu",
+          "content": "James Osei-Bonsu is a 55-year-old managing director in Goldman Sachs's private wealth management division, where he advises ultra-high-net-worth families on multi-generational wealth planning. He joined Goldman from Morgan Stanley twenty years ago. He lives in a townhouse in the West Village with his husband, an architect. James is a sophisticated and long-tenured museum donor who upgraded to major giving three years ago. His collecting interests span Abstract Expressionism and contemporary West African art — he owns a significant work by Clyfford Still and has been building a collection of Ghanaian and Nigerian contemporary artists. He attended Art Basel Basel and Art Basel Miami Beach in the same year for the first time last cycle. James is a board member of the Dia Art Foundation and gives through the Osei-Bonsu Family Foundation, which he and his husband established five years ago. Cultivation note: key relationship — significant additional gift potential. Sarah Okafor to schedule a quarterly check-in and discuss a five-year pledging commitment.",
+          "metadata": {
+            "donor_id": "D0488",
+            "name": "James Osei-Bonsu",
+            "age": 55,
+            "location": "West Village, New York, NY",
+            "giving_tier": "major",
+            "relationship_manager": "Sarah Okafor"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_2c250e3ebc084b6b9b35daa036a105ce",
+              "node_type": "Discovered_entity",
+              "name": "Goldman Sachs's private wealth management division",
+              "edge_id": "EDGE_43f7e6c8f7c443dba15f1e635dd859af"
+            }
+          ]
+        },
+        {
+          "source_id": "SRC_fd700683d4cb4511aec4a0b3f4752e22",
+          "donor_id": "D0475",
+          "name": "Catherine Drummond",
+          "content": "Catherine Drummond is a 65-year-old principal and founder of Drummond & Associates, a management consulting boutique serving nonprofit and philanthropic organizations. She spent the first half of her career at McKinsey & Company, where she was a partner in the social sector practice. She lives in a large apartment in Brooklyn Heights with her husband, a retired federal judge. Catherine is a sophisticated arts philanthropist — she serves on the board of the Guggenheim Foundation and has been a museum major donor for seven years. Her collecting interests center on Abstract Expressionism and she has a deep knowledge of the movement; she owns works by Motherwell and Franz Kline and has lent one piece to the museum. She attended Art Basel Basel as part of the museum's VIP group last June and also attended Frieze New York. The Drummond Foundation distributes approximately $600,000 annually, with arts and education as primary areas. Cultivation note: stewardship focus. Sarah Okafor to plan a private dinner with the director in Q1 to discuss a potential capital campaign gift.",
+          "metadata": {
+            "donor_id": "D0475",
+            "name": "Catherine Drummond",
+            "age": 65,
+            "location": "Brooklyn Heights, Brooklyn, NY",
+            "giving_tier": "major",
+            "relationship_manager": "Sarah Okafor"
+          },
+          "neighbors": [
+            {
+              "node_id": "DISC_322f172eb89f4dcea4d326b75a991c01",
+              "node_type": "Discovered_entity",
+              "name": "The Drummond Foundation",
+              "edge_id": "EDGE_8cd8d29705864045b9ab2d930884365c"
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_e7fc70d2108f48148e5f9706036c0d54",
+            "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+            "SRC_8170175835fa4ff2bce4dae447fb7688"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+            "SRC_fd700683d4cb4511aec4a0b3f4752e22",
+            "SRC_e49f23a212284b8fad2b8f1a4a84341d"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 1
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        }
+      }
+    }
+  ],
+  "provenance_exclusions": [
+    {
+      "query_id": "Q007",
+      "question": "Which donors are explicitly described as board members or trustees of the Public Art Fund?",
+      "seeds": [
+        {
+          "node_id": "CONCEPT_d241806e3252431eb427089ed2e74e12",
+          "node_type": "Concept",
+          "match_class": 3,
+          "match_label": "Art Fund",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "CONCEPT_eb9ce9e059824a6b8fd59cd7ccaac4e5",
+          "node_type": "Concept",
+          "match_class": 3,
+          "match_label": "Public Art Fund",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_4a45be8f38584efcb82ee57c5c7ba9e7",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Art Fund",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_7e0f6c98e45e4ecf9102cac7fd07122e",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Art Fund",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_a4efe0b341b340d88a86ed61d0bb719a",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Public Art Fund",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "CONCEPT_09cb60c62dbb44e4a1aa61a67aa3c191",
+          "node_type": "Concept",
+          "match_class": 1,
+          "match_label": "Art Acquisition Fund",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "CONCEPT_dcd5afb8167d40f29889842fe5409531",
+          "node_type": "Concept",
+          "match_class": 1,
+          "match_label": "Public Art Funding",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "CONCEPT_f19f19e586334dcc928b565823a105ba",
+          "node_type": "Concept",
+          "match_class": 1,
+          "match_label": "Art Collection Fund",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_1aee41e818de49589187f8236252a28d",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Art Collection Fund",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_43e06d2940a042d7a4d1776797731925",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Art Acquisition Fund",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_bd580137ce594efd82484648686bfbc9",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Public Art Funding",
+          "match_kind": "partial_multi_token"
+        }
+      ],
+      "candidate_count": 6,
+      "eligible_count": 1,
+      "excluded_gold": [
+        {
+          "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+          "donor_id": "D0171",
+          "name": "Priscilla Ng",
+          "exclusion": {
+            "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+            "reason": "no_valid_evidence_path",
+            "collision_decisions": [
+              {
+                "collision": false,
+                "decision": "not_applicable"
+              },
+              {
+                "collision": false,
+                "decision": "not_applicable"
+              }
+            ]
+          },
+          "content": "Priscilla Ng is co-founder and CEO of a Series B SaaS company serving the architecture and engineering sectors, based in DUMBO. She launched the company in 2018 after a decade in product management at Autodesk and Bentley Systems. Priscilla lives in DUMBO and is deeply embedded in the Brooklyn tech and arts communities — she serves on the board of the Public Art Fund, attending monthly meetings in their Chelsea offices. Her collecting is focused on Minimalism: she has acquired works by Anne Truitt and Robert Irwin through gallery relationships developed over four years of attending art fairs, most recently Art Basel Miami and Frieze New York. She attended the museum's architecture and art symposium in April and met the director for the first time, expressing interest in the planned outdoor sculpture installation. Priya Mehta should schedule a follow-up to discuss an annual-to-mid upgrade and potential multi-year commitment tied to the public art programming budget.",
+          "paths": [
+            {
+              "seed_id": "DISC_bd580137ce594efd82484648686bfbc9",
+              "seed_type": "Discovered_entity",
+              "seed_label": "Public Art Funding",
+              "seed_match_class": 1,
+              "seed_match_kind": "partial_multi_token",
+              "node_ids": [
+                "DISC_bd580137ce594efd82484648686bfbc9",
+                "SRC_b4afb6b3a6dc49408f204f940ec09a27"
+              ],
+              "edge_ids": [
+                "EDGE_c37da299b1284268b81c1a5ee67b359b"
+              ],
+              "edge_types": [
+                "MENTIONS"
+              ],
+              "edges": [
+                {
+                  "edge_id": "EDGE_c37da299b1284268b81c1a5ee67b359b",
+                  "edge_type": "MENTIONS",
+                  "stored_source": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+                  "stored_target": "DISC_bd580137ce594efd82484648686bfbc9",
+                  "traversal_direction": "reverse",
+                  "attributes": {}
+                }
+              ],
+              "path_length": 1,
+              "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+              "evidence": [],
+              "collision": [
+                true,
+                {
+                  "collision": false,
+                  "decision": "not_applicable"
+                }
+              ],
+              "all_seed_alias_checks": [
+                {
+                  "alias": "Annual-to-Mid Upgrade",
+                  "matches_query": null,
+                  "in_source": [
+                    879,
+                    900
+                  ]
+                },
+                {
+                  "alias": "Multi-Year Commitment",
+                  "matches_query": null,
+                  "in_source": [
+                    915,
+                    936
+                  ]
+                },
+                {
+                  "alias": "Potential",
+                  "matches_query": null,
+                  "in_source": [
+                    905,
+                    914
+                  ]
+                },
+                {
+                  "alias": "Potential multi-year commitment tied to the public art programming budget",
+                  "matches_query": null,
+                  "in_source": [
+                    905,
+                    978
+                  ]
+                },
+                {
+                  "alias": "Public Art Funding",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": null
+                },
+                {
+                  "alias": "Public Art Programming Budget",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": [
+                    949,
+                    978
+                  ]
+                }
+              ]
+            },
+            {
+              "seed_id": "CONCEPT_dcd5afb8167d40f29889842fe5409531",
+              "seed_type": "Concept",
+              "seed_label": "Public Art Funding",
+              "seed_match_class": 1,
+              "seed_match_kind": "partial_multi_token",
+              "node_ids": [
+                "CONCEPT_dcd5afb8167d40f29889842fe5409531",
+                "DISC_bd580137ce594efd82484648686bfbc9",
+                "SRC_b4afb6b3a6dc49408f204f940ec09a27"
+              ],
+              "edge_ids": [
+                "EDGE_06d6ec05de844cf99b590e981e237445",
+                "EDGE_c37da299b1284268b81c1a5ee67b359b"
+              ],
+              "edge_types": [
+                "IS_CONCEPT",
+                "MENTIONS"
+              ],
+              "edges": [
+                {
+                  "edge_id": "EDGE_06d6ec05de844cf99b590e981e237445",
+                  "edge_type": "IS_CONCEPT",
+                  "stored_source": "DISC_bd580137ce594efd82484648686bfbc9",
+                  "stored_target": "CONCEPT_dcd5afb8167d40f29889842fe5409531",
+                  "traversal_direction": "reverse",
+                  "attributes": {
+                    "original_trigger": "Public Art Funding"
+                  }
+                },
+                {
+                  "edge_id": "EDGE_c37da299b1284268b81c1a5ee67b359b",
+                  "edge_type": "MENTIONS",
+                  "stored_source": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+                  "stored_target": "DISC_bd580137ce594efd82484648686bfbc9",
+                  "traversal_direction": "reverse",
+                  "attributes": {}
+                }
+              ],
+              "path_length": 2,
+              "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+              "evidence": [],
+              "collision": [
+                true,
+                {
+                  "collision": false,
+                  "decision": "not_applicable"
+                }
+              ],
+              "all_seed_alias_checks": [
+                {
+                  "alias": "Public Art Funding",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": null
+                }
+              ]
+            }
+          ],
+          "unweighted_top3": false
+        }
+      ],
+      "gold": [
+        "SRC_a708b816d69f4c9b94fae6fb6e9c8c5d",
+        "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+        "SRC_cbf9e213476b4447a62ec10998109cd0"
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_41567911c8b045bd8dd0e55e8e69a06b",
+            "SRC_cbf9e213476b4447a62ec10998109cd0",
+            "SRC_e7fc70d2108f48148e5f9706036c0d54"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_fd700683d4cb4511aec4a0b3f4752e22",
+            "SRC_ed547720efc542e09abb139fcb3e0d12",
+            "SRC_d94ae1c2c8e241cd9e0209b0859a15f6"
+          ],
+          "tp": 0,
+          "fp": 3,
+          "fn": 3
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_a21d8945b3304f7bba67ff8e4e9ba0ba",
+            "SRC_a708b816d69f4c9b94fae6fb6e9c8c5d",
+            "SRC_f5c42c43daaf4f36ad61277877289e94"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_a708b816d69f4c9b94fae6fb6e9c8c5d"
+          ],
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        }
+      }
+    },
+    {
+      "query_id": "Q009",
+      "question": "Which Brooklyn-based law-firm donors are explicitly described as collecting photography?",
+      "seeds": [
+        {
+          "node_id": "DISC_7e0f6c98e45e4ecf9102cac7fd07122e",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Photography",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_56fca8c2fec34d179f314390fee379fc",
+          "node_type": "Discovered_entity",
+          "match_class": 2,
+          "match_label": "Law Firm",
+          "match_kind": "complete_token"
+        },
+        {
+          "node_id": "DISC_2613bf7c29474299bdca19381c464202",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Law Firm Partner",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_f2c8b5aa6a27482aa14798b53c7320e7",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Law Firm Associate",
+          "match_kind": "partial_multi_token"
+        }
+      ],
+      "candidate_count": 5,
+      "eligible_count": 1,
+      "excluded_gold": [
+        {
+          "source_id": "SRC_b0b29907d30d405bbd3fdc6c785fec65",
+          "donor_id": "D0067",
+          "name": "Mei-Lin Cho",
+          "exclusion": {
+            "source_id": "SRC_b0b29907d30d405bbd3fdc6c785fec65",
+            "reason": "no_valid_evidence_path",
+            "collision_decisions": [
+              {
+                "collision": false,
+                "decision": "not_applicable"
+              }
+            ]
+          },
+          "content": "Mei-Lin Cho is an associate at Sullivan & Cromwell in the corporate group, having joined after clerking for a federal district judge in the Southern District of New York. She grew up in Flushing, Queens, and was introduced to the museum through the Young Patrons Circle by a law school classmate. Her collecting is at an early stage — she owns two photographs by contemporaries she met at an ICP open studio event — but she has a genuine and informed aesthetic curiosity and attends openings regularly. Mei-Lin runs the Prospect Park half marathon annually and trains with a running club that meets on Saturday mornings in Park Slope. She volunteers with a pro bono arts law clinic that assists emerging artists with contract and intellectual property questions. Priya Mehta manages the relationship and notes she is thoughtful, slightly reserved in group settings, and responds best to small-group cultivation events. Annual gift of $2,500. Recommend inviting her to the Young Patrons advisory committee to deepen engagement and accelerate relationship development.",
+          "paths": [
+            {
+              "seed_id": "DISC_f2c8b5aa6a27482aa14798b53c7320e7",
+              "seed_type": "Discovered_entity",
+              "seed_label": "Law Firm Associate",
+              "seed_match_class": 1,
+              "seed_match_kind": "partial_multi_token",
+              "node_ids": [
+                "DISC_f2c8b5aa6a27482aa14798b53c7320e7",
+                "SRC_b0b29907d30d405bbd3fdc6c785fec65"
+              ],
+              "edge_ids": [
+                "EDGE_b8926fc5a7ad4a06846015473ec896b8"
+              ],
+              "edge_types": [
+                "MENTIONS"
+              ],
+              "edges": [
+                {
+                  "edge_id": "EDGE_b8926fc5a7ad4a06846015473ec896b8",
+                  "edge_type": "MENTIONS",
+                  "stored_source": "SRC_b0b29907d30d405bbd3fdc6c785fec65",
+                  "stored_target": "DISC_f2c8b5aa6a27482aa14798b53c7320e7",
+                  "traversal_direction": "reverse",
+                  "attributes": {}
+                }
+              ],
+              "path_length": 1,
+              "source_id": "SRC_b0b29907d30d405bbd3fdc6c785fec65",
+              "evidence": [],
+              "collision": [
+                true,
+                {
+                  "collision": false,
+                  "decision": "not_applicable"
+                }
+              ],
+              "all_seed_alias_checks": [
+                {
+                  "alias": "Corporate Law Associate",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Former Federal District Judge Clerk",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Law Firm Associate",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": null
+                },
+                {
+                  "alias": "Legal Professional",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Mei-Lin Cho",
+                  "matches_query": null,
+                  "in_source": [
+                    0,
+                    11
+                  ]
+                },
+                {
+                  "alias": "Sullivan & Cromwell",
+                  "matches_query": null,
+                  "in_source": [
+                    31,
+                    50
+                  ]
+                }
+              ]
+            }
+          ],
+          "unweighted_top3": true
+        }
+      ],
+      "gold": [
+        "SRC_b0b29907d30d405bbd3fdc6c785fec65",
+        "SRC_ca382c534abf423ba1926acd4f02191e",
+        "SRC_f5c42c43daaf4f36ad61277877289e94"
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_e724d27deb20445695164b8765b80b63",
+            "SRC_ca382c534abf423ba1926acd4f02191e",
+            "SRC_e7fc70d2108f48148e5f9706036c0d54"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_ca382c534abf423ba1926acd4f02191e",
+            "SRC_ed547720efc542e09abb139fcb3e0d12",
+            "SRC_304ee01504be4eb996f90325fd41b0ed"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_a21d8945b3304f7bba67ff8e4e9ba0ba",
+            "SRC_41567911c8b045bd8dd0e55e8e69a06b",
+            "SRC_b0b29907d30d405bbd3fdc6c785fec65"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_a21d8945b3304f7bba67ff8e4e9ba0ba"
+          ],
+          "tp": 0,
+          "fp": 1,
+          "fn": 3
+        }
+      }
+    },
+    {
+      "query_id": "Q015",
+      "question": "Which profiles mention Goldman Sachs roles in consumer-and-healthcare investment banking, large-cap consumer-and-retail research, or healthcare financial sponsors?",
+      "seeds": [
+        {
+          "node_id": "DISC_18804d31f07749b9aa4e583b127fc9a9",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Investment Banking",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_2c250e3ebc084b6b9b35daa036a105ce",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Investment Banking",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_31aa03a4f4b846209ffc2b919ce4cf89",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Goldman Sachs",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_3d999c8dbe45467a947ae9d5a5fd9de3",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Goldman Sachs",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_42494c0297d5446ca3a62a6eb5fb42f6",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Investment Banking",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_62aaf31954c04605aa822ae141a550e9",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Goldman Sachs",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_89524684b3234c2e8e7f4a111228acec",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Goldman Sachs",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_fc019c69f4b24064a20415e004bb481d",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Goldman Sachs",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_2114eb350bfa4994a488ff444f7f470f",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Goldman Sachs Employee",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_3b813f7bddea4bdeb1ba4682e92fbbac",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Goldman Sachs Financial Sponsors Group",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_840a93ff90d0482289efbdd783ff0ca3",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Goldman Sachs Asset Management",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_e8cd37f07c0542fb87db92131710f73a",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Consumer and Retail Sectors",
+          "match_kind": "partial_multi_token"
+        }
+      ],
+      "candidate_count": 16,
+      "eligible_count": 8,
+      "excluded_gold": [
+        {
+          "source_id": "SRC_e7fc70d2108f48148e5f9706036c0d54",
+          "donor_id": "D0794",
+          "name": "Richard Nakagawa",
+          "exclusion": {
+            "source_id": "SRC_e7fc70d2108f48148e5f9706036c0d54",
+            "reason": "no_valid_evidence_path",
+            "collision_decisions": [
+              {
+                "collision": false,
+                "decision": "not_applicable"
+              }
+            ]
+          },
+          "content": "Richard Nakagawa is a managing director at a private equity firm focused on healthcare services buyouts, having previously spent eight years at Goldman Sachs's financial sponsors group in the healthcare vertical. Richard was born in Los Angeles, where his family has lived for three generations, and recently relocated with his wife and two children to Greenwich, Connecticut, though he maintains strong New York ties. His collecting focuses on figurative painting — he has been building a focused collection around Eric Fischl's beach and domestic scene paintings and recently acquired a mid-period canvas through a dealer in Chelsea. Richard attended Art Basel Basel last June and Art Basel Miami in December, and described his Basel trip as the most productive three days he has spent in the art world. He was introduced to the museum by a Goldman alumni colleague and made his first gift of $8,000 last spring. Cultivation notes: Sarah Okafor manages the account. Richard is a strong new relationship with Goldman alumni overlap with several other donors. His Fischl focus aligns with upcoming figurative painting programming. Sarah recommends a curator meeting and a $15,000 ask for year two.",
+          "paths": [
+            {
+              "seed_id": "DISC_3b813f7bddea4bdeb1ba4682e92fbbac",
+              "seed_type": "Discovered_entity",
+              "seed_label": "Goldman Sachs Financial Sponsors Group",
+              "seed_match_class": 1,
+              "seed_match_kind": "partial_multi_token",
+              "node_ids": [
+                "DISC_3b813f7bddea4bdeb1ba4682e92fbbac",
+                "SRC_e7fc70d2108f48148e5f9706036c0d54"
+              ],
+              "edge_ids": [
+                "EDGE_f786ab22054e4061aa1a6432356f6e79"
+              ],
+              "edge_types": [
+                "MENTIONS"
+              ],
+              "edges": [
+                {
+                  "edge_id": "EDGE_f786ab22054e4061aa1a6432356f6e79",
+                  "edge_type": "MENTIONS",
+                  "stored_source": "SRC_e7fc70d2108f48148e5f9706036c0d54",
+                  "stored_target": "DISC_3b813f7bddea4bdeb1ba4682e92fbbac",
+                  "traversal_direction": "reverse",
+                  "attributes": {}
+                }
+              ],
+              "path_length": 1,
+              "source_id": "SRC_e7fc70d2108f48148e5f9706036c0d54",
+              "evidence": [],
+              "collision": [
+                true,
+                {
+                  "collision": false,
+                  "decision": "not_applicable"
+                }
+              ],
+              "all_seed_alias_checks": [
+                {
+                  "alias": "Goldman Sachs Financial Sponsors Group",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": null
+                },
+                {
+                  "alias": "Healthcare Industry",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Healthcare Vertical",
+                  "matches_query": null,
+                  "in_source": [
+                    192,
+                    211
+                  ]
+                },
+                {
+                  "alias": "Managing Director",
+                  "matches_query": null,
+                  "in_source": [
+                    22,
+                    39
+                  ]
+                },
+                {
+                  "alias": "Private Equity",
+                  "matches_query": null,
+                  "in_source": [
+                    45,
+                    59
+                  ]
+                },
+                {
+                  "alias": "Private Equity Firm",
+                  "matches_query": null,
+                  "in_source": [
+                    45,
+                    64
+                  ]
+                },
+                {
+                  "alias": "private equity firm focused on healthcare services buyouts",
+                  "matches_query": null,
+                  "in_source": [
+                    45,
+                    103
+                  ]
+                }
+              ]
+            }
+          ],
+          "unweighted_top3": false
+        }
+      ],
+      "gold": [
+        "SRC_059c3e0c07014a2b9d9d79006bae40b6",
+        "SRC_1e85ef4a27624583b2bbed5203988083",
+        "SRC_e7fc70d2108f48148e5f9706036c0d54"
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_1e85ef4a27624583b2bbed5203988083",
+            "SRC_059c3e0c07014a2b9d9d79006bae40b6",
+            "SRC_e7fc70d2108f48148e5f9706036c0d54"
+          ],
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+            "SRC_3ac471dea79b40518de8e10ff9121d44",
+            "SRC_67fcc1ef6eaa4d7faf93e8b31f914bab"
+          ],
+          "tp": 0,
+          "fp": 3,
+          "fn": 3
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_059c3e0c07014a2b9d9d79006bae40b6",
+            "SRC_05c73e6a1a964f5bac6d06fdd4468454",
+            "SRC_1e85ef4a27624583b2bbed5203988083"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 1
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_1e85ef4a27624583b2bbed5203988083",
+            "SRC_f3170dc618be459aa194ccad5623ba6c",
+            "SRC_059c3e0c07014a2b9d9d79006bae40b6"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 1
+        }
+      }
+    },
+    {
+      "query_id": "Q016",
+      "question": "Which Goldman wealth or private-wealth profiles combine European-origin backgrounds, Art Basel Basel attendance, and collecting tied to Eastern Europe, Greece, or postwar Europe?",
+      "seeds": [
+        {
+          "node_id": "DISC_2114eb350bfa4994a488ff444f7f470f",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Eastern‑European Market Focus",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_2c250e3ebc084b6b9b35daa036a105ce",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Goldman Sachs Private Wealth Management Division",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_fc019c69f4b24064a20415e004bb481d",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Private Wealth Management",
+          "match_kind": "partial_multi_token"
+        }
+      ],
+      "candidate_count": 6,
+      "eligible_count": 1,
+      "excluded_gold": [
+        {
+          "source_id": "SRC_a6589a466a6f4705a731aca66e7062f5",
+          "donor_id": "D0865",
+          "name": "Aleksei Volkov",
+          "exclusion": {
+            "source_id": "SRC_a6589a466a6f4705a731aca66e7062f5",
+            "reason": "no_valid_evidence_path",
+            "collision_decisions": [
+              {
+                "collision": false,
+                "decision": "not_applicable"
+              }
+            ]
+          },
+          "content": "Aleksei Volkov is a managing director in Goldman Sachs's wealth management division, serving ultra-high-net-worth families with ties to Eastern Europe and Russia. He was born in St. Petersburg, immigrated to the United States at age sixteen, and studied economics and art history at Yale before joining Goldman. He lives in Midtown East and collects primarily postwar European painting and Abstract Expressionism — he owns a de Kooning drawing and a Rothko work on paper, and has expressed interest in adding a major Pollock to the collection. He attended Art Basel Basel this past June and spent considerable time at the Hauser & Wirth booth. Aleksei is fluent in Russian, German, and English and has facilitated introductions between the museum and several Eastern European private lenders. He donates to the Yale Art Gallery and to a foundation supporting classical music education in Ukraine. Cultivation note: James Reuter to explore loan opportunities as a cultivation step before any direct ask; Aleksei responds well to curatorial engagement. Capacity: $30,000–$75,000.",
+          "paths": [
+            {
+              "seed_id": "DISC_2114eb350bfa4994a488ff444f7f470f",
+              "seed_type": "Discovered_entity",
+              "seed_label": "Eastern‑European Market Focus",
+              "seed_match_class": 1,
+              "seed_match_kind": "partial_multi_token",
+              "node_ids": [
+                "DISC_2114eb350bfa4994a488ff444f7f470f",
+                "SRC_a6589a466a6f4705a731aca66e7062f5"
+              ],
+              "edge_ids": [
+                "EDGE_745353efc1a34dc0a24bb364254c4293"
+              ],
+              "edge_types": [
+                "MENTIONS"
+              ],
+              "edges": [
+                {
+                  "edge_id": "EDGE_745353efc1a34dc0a24bb364254c4293",
+                  "edge_type": "MENTIONS",
+                  "stored_source": "SRC_a6589a466a6f4705a731aca66e7062f5",
+                  "stored_target": "DISC_2114eb350bfa4994a488ff444f7f470f",
+                  "traversal_direction": "reverse",
+                  "attributes": {}
+                }
+              ],
+              "path_length": 1,
+              "source_id": "SRC_a6589a466a6f4705a731aca66e7062f5",
+              "evidence": [],
+              "collision": [
+                true,
+                {
+                  "collision": false,
+                  "decision": "not_applicable"
+                }
+              ],
+              "all_seed_alias_checks": [
+                {
+                  "alias": "Aleksei Volkov",
+                  "matches_query": null,
+                  "in_source": [
+                    0,
+                    14
+                  ]
+                },
+                {
+                  "alias": "Eastern‑European Market Focus",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": null
+                },
+                {
+                  "alias": "Financial Services",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Goldman Sachs Employee",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "High‑Net‑Worth Client Specialist",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Managing Director",
+                  "matches_query": null,
+                  "in_source": [
+                    20,
+                    37
+                  ]
+                },
+                {
+                  "alias": "Wealth Management Professional",
+                  "matches_query": null,
+                  "in_source": null
+                }
+              ]
+            }
+          ],
+          "unweighted_top3": false
+        },
+        {
+          "source_id": "SRC_3901afe8826243ab985f340222cb3199",
+          "donor_id": "D0455",
+          "name": "Nicholas Papadopoulos",
+          "exclusion": {
+            "source_id": "SRC_3901afe8826243ab985f340222cb3199",
+            "reason": "no_valid_evidence_path",
+            "collision_decisions": [
+              {
+                "collision": false,
+                "decision": "not_applicable"
+              }
+            ]
+          },
+          "content": "Nicholas Papadopoulos is a 61-year-old senior managing director in Goldman Sachs's private wealth management division, where he has worked for twenty-two years after an earlier stint at Merrill Lynch. Greek-American, he grew up in Astoria and has maintained strong ties to the Queens Greek community throughout his career. He lives in a large apartment on Park Avenue. Nicholas's collecting focus is on abstract and figurative work by Greek and Greek-American artists — he owns several works by Jannis Kounellis and Lucas Samaras, as well as a Lucian Freud etching. He has also developed an interest in Abstract Expressionism and owns a Franz Kline drawing that he acquired from a colleague's estate. He attended Art Basel Basel for the past eight years. Diana Flores manages the relationship; Nicholas has been a mid-tier donor for six years and has responded warmly to collector dinners and private curator events. He is also a competitive offshore sailor: he raced the Sydney-Hobart race last December on a friend's Baltic 45, Κυανή Βαρεία, placing mid-fleet in his division. A $45,000 ask for the contemporary art acquisitions endowment is planned for the spring solicitation. His wife Maria is a board member at the Onassis Foundation, a connection worth exploring for programmatic collaboration.",
+          "paths": [
+            {
+              "seed_id": "DISC_2c250e3ebc084b6b9b35daa036a105ce",
+              "seed_type": "Discovered_entity",
+              "seed_label": "Goldman Sachs Private Wealth Management Division",
+              "seed_match_class": 1,
+              "seed_match_kind": "partial_multi_token",
+              "node_ids": [
+                "DISC_2c250e3ebc084b6b9b35daa036a105ce",
+                "SRC_3901afe8826243ab985f340222cb3199"
+              ],
+              "edge_ids": [
+                "EDGE_76fd38c24e2540d8b31cb7e269e67e7b"
+              ],
+              "edge_types": [
+                "MENTIONS"
+              ],
+              "edges": [
+                {
+                  "edge_id": "EDGE_76fd38c24e2540d8b31cb7e269e67e7b",
+                  "edge_type": "MENTIONS",
+                  "stored_source": "SRC_3901afe8826243ab985f340222cb3199",
+                  "stored_target": "DISC_2c250e3ebc084b6b9b35daa036a105ce",
+                  "traversal_direction": "reverse",
+                  "attributes": {}
+                }
+              ],
+              "path_length": 1,
+              "source_id": "SRC_3901afe8826243ab985f340222cb3199",
+              "evidence": [],
+              "collision": [
+                true,
+                {
+                  "collision": false,
+                  "decision": "not_applicable"
+                }
+              ],
+              "all_seed_alias_checks": [
+                {
+                  "alias": "Associate",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Financial Institution",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Goldman Sachs Private Wealth Management Division",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": null
+                },
+                {
+                  "alias": "Goldman Sachs's private wealth management division",
+                  "matches_query": null,
+                  "in_source": [
+                    67,
+                    117
+                  ]
+                },
+                {
+                  "alias": "Investment Banking",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Managing Director",
+                  "matches_query": null,
+                  "in_source": [
+                    46,
+                    63
+                  ]
+                },
+                {
+                  "alias": "Managing Partner",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Senior Managing Director",
+                  "matches_query": null,
+                  "in_source": [
+                    39,
+                    63
+                  ]
+                }
+              ]
+            }
+          ],
+          "unweighted_top3": true
+        }
+      ],
+      "gold": [
+        "SRC_3901afe8826243ab985f340222cb3199",
+        "SRC_a6589a466a6f4705a731aca66e7062f5",
+        "SRC_f3170dc618be459aa194ccad5623ba6c"
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_a6589a466a6f4705a731aca66e7062f5",
+            "SRC_f3170dc618be459aa194ccad5623ba6c",
+            "SRC_d94ae1c2c8e241cd9e0209b0859a15f6"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 1
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_a6589a466a6f4705a731aca66e7062f5",
+            "SRC_3901afe8826243ab985f340222cb3199",
+            "SRC_e7fc70d2108f48148e5f9706036c0d54"
+          ],
+          "tp": 2,
+          "fp": 1,
+          "fn": 1
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_05c73e6a1a964f5bac6d06fdd4468454",
+            "SRC_3901afe8826243ab985f340222cb3199",
+            "SRC_3ac471dea79b40518de8e10ff9121d44"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 2
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_f3170dc618be459aa194ccad5623ba6c"
+          ],
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        }
+      }
+    },
+    {
+      "query_id": "Q021",
+      "question": "Which donor leads JPMorgan's technology-sector M&A team, owns four Cindy Sherman works, and is being cultivated for a photography-endowment gift?",
+      "seeds": [
+        {
+          "node_id": "DISC_7e0f6c98e45e4ecf9102cac7fd07122e",
+          "node_type": "Discovered_entity",
+          "match_class": 3,
+          "match_label": "Photography",
+          "match_kind": "exact_phrase"
+        },
+        {
+          "node_id": "DISC_42494c0297d5446ca3a62a6eb5fb42f6",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Technology Sector IPOs",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_8ad3610f53e043a08032eddfa509fc1c",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Technology M&A Lead",
+          "match_kind": "partial_multi_token"
+        },
+        {
+          "node_id": "DISC_cd0f805f4dbe40658b596804048fbb22",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Technology Sector Analysis",
+          "match_kind": "partial_multi_token"
+        }
+      ],
+      "candidate_count": 4,
+      "eligible_count": 3,
+      "excluded_gold": [
+        {
+          "source_id": "SRC_2b70735578ff431ca60183fe32cb12a8",
+          "donor_id": "D0202",
+          "name": "Sunita Varma",
+          "exclusion": {
+            "source_id": "SRC_2b70735578ff431ca60183fe32cb12a8",
+            "reason": "no_valid_evidence_path",
+            "collision_decisions": [
+              {
+                "collision": false,
+                "decision": "not_applicable"
+              }
+            ]
+          },
+          "content": "Sunita Varma is a managing director at JPMorgan Chase's investment bank, leading the technology sector M&A team. She started her career at Goldman Sachs in the TMT group before moving to JPMorgan twelve years ago. She lives on the Upper East Side with her husband Rohit and their two children. Sunita has been interested in contemporary photography since her college years and has built a focused collection around Cindy Sherman — she owns four works from different phases of Sherman's career and recently added a piece from the Society Portraits series through a New York gallery. She attended Art Basel Miami for the third time in December and describes the fair as the one annual event she would sacrifice almost any other commitment to attend. She is a member of the Whitney Museum Council and attends their programming regularly alongside her museum involvement. Sarah Okafor manages the relationship; Sunita gives at the mid-tier level. Proposed next step: introduce her to the director over a private lunch and discuss a potential major gift toward the photography endowment.",
+          "paths": [
+            {
+              "seed_id": "DISC_8ad3610f53e043a08032eddfa509fc1c",
+              "seed_type": "Discovered_entity",
+              "seed_label": "Technology M&A Lead",
+              "seed_match_class": 1,
+              "seed_match_kind": "partial_multi_token",
+              "node_ids": [
+                "DISC_8ad3610f53e043a08032eddfa509fc1c",
+                "SRC_2b70735578ff431ca60183fe32cb12a8"
+              ],
+              "edge_ids": [
+                "EDGE_8618bdcce6cf44f9a05b2952c0072b63"
+              ],
+              "edge_types": [
+                "MENTIONS"
+              ],
+              "edges": [
+                {
+                  "edge_id": "EDGE_8618bdcce6cf44f9a05b2952c0072b63",
+                  "edge_type": "MENTIONS",
+                  "stored_source": "SRC_2b70735578ff431ca60183fe32cb12a8",
+                  "stored_target": "DISC_8ad3610f53e043a08032eddfa509fc1c",
+                  "traversal_direction": "reverse",
+                  "attributes": {}
+                }
+              ],
+              "path_length": 1,
+              "source_id": "SRC_2b70735578ff431ca60183fe32cb12a8",
+              "evidence": [],
+              "collision": [
+                true,
+                {
+                  "collision": false,
+                  "decision": "not_applicable"
+                }
+              ],
+              "all_seed_alias_checks": [
+                {
+                  "alias": "Financial Services Company",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Investment Banker",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Leadership",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Managing Director",
+                  "matches_query": null,
+                  "in_source": [
+                    18,
+                    35
+                  ]
+                },
+                {
+                  "alias": "Sunita Varma",
+                  "matches_query": null,
+                  "in_source": [
+                    0,
+                    12
+                  ]
+                },
+                {
+                  "alias": "Technology M&A Lead",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": null
+                }
+              ]
+            }
+          ],
+          "unweighted_top3": true
+        }
+      ],
+      "gold": [
+        "SRC_2b70735578ff431ca60183fe32cb12a8"
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_2b70735578ff431ca60183fe32cb12a8",
+            "SRC_7d71e393a7e045b99266d9b05b499cb3",
+            "SRC_4912b2840ea44851adfd0c9e12aedafa"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_2b70735578ff431ca60183fe32cb12a8",
+            "SRC_4912b2840ea44851adfd0c9e12aedafa",
+            "SRC_fd700683d4cb4511aec4a0b3f4752e22"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 0
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_a21d8945b3304f7bba67ff8e4e9ba0ba",
+            "SRC_2b70735578ff431ca60183fe32cb12a8",
+            "SRC_6e88f96639d441a5a3cbbdce2ae2ccab"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 0
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_6e88f96639d441a5a3cbbdce2ae2ccab",
+            "SRC_8170175835fa4ff2bce4dae447fb7688",
+            "SRC_a21d8945b3304f7bba67ff8e4e9ba0ba"
+          ],
+          "tp": 0,
+          "fp": 3,
+          "fn": 1
+        }
+      }
+    },
+    {
+      "query_id": "Q023",
+      "question": "Which donor works in Lazard restructuring and is being cultivated around an exhibition on Chinese American artistic identity?",
+      "seeds": [
+        {
+          "node_id": "DISC_ce996d2857d146c4b00b58f0b38e6b56",
+          "node_type": "Discovered_entity",
+          "match_class": 1,
+          "match_label": "Lazard Restructuring Advisory Group",
+          "match_kind": "partial_multi_token"
+        }
+      ],
+      "candidate_count": 1,
+      "eligible_count": 0,
+      "excluded_gold": [
+        {
+          "source_id": "SRC_a8c756bccd424deb94082c6acdaf3f76",
+          "donor_id": "D0292",
+          "name": "Victoria Huang",
+          "exclusion": {
+            "source_id": "SRC_a8c756bccd424deb94082c6acdaf3f76",
+            "reason": "no_valid_evidence_path",
+            "collision_decisions": [
+              {
+                "collision": false,
+                "decision": "not_applicable"
+              }
+            ]
+          },
+          "content": "Victoria Huang is a managing director at Lazard's restructuring advisory group, where she has worked for sixteen years following stints at Merrill Lynch and a boutique restructuring firm. She holds an undergraduate degree from Dartmouth and a JD/MBA joint degree from NYU. Victoria lives in the West Village with her husband and twin sons and has been a museum supporter for nine years. Her collecting interest centers on contemporary Chinese American artists — she owns significant works by Hung Liu and Martin Wong, and has been following the career of Wangechi Mutu's generation of artists closely. She attended Art Basel Hong Kong twice as a collector and is a member of the advisory board for Asian Arts at the Brooklyn Museum. Diana Flores manages the relationship and is cultivating a major gift conversation tied to a proposed exhibition on Chinese American artistic identity in New York. Victoria expressed strong enthusiasm at a recent cultivation dinner.",
+          "paths": [
+            {
+              "seed_id": "DISC_ce996d2857d146c4b00b58f0b38e6b56",
+              "seed_type": "Discovered_entity",
+              "seed_label": "Lazard Restructuring Advisory Group",
+              "seed_match_class": 1,
+              "seed_match_kind": "partial_multi_token",
+              "node_ids": [
+                "DISC_ce996d2857d146c4b00b58f0b38e6b56",
+                "SRC_a8c756bccd424deb94082c6acdaf3f76"
+              ],
+              "edge_ids": [
+                "EDGE_2a7d68722e6145e5a0e4964671649a52"
+              ],
+              "edge_types": [
+                "MENTIONS"
+              ],
+              "edges": [
+                {
+                  "edge_id": "EDGE_2a7d68722e6145e5a0e4964671649a52",
+                  "edge_type": "MENTIONS",
+                  "stored_source": "SRC_a8c756bccd424deb94082c6acdaf3f76",
+                  "stored_target": "DISC_ce996d2857d146c4b00b58f0b38e6b56",
+                  "traversal_direction": "reverse",
+                  "attributes": {}
+                }
+              ],
+              "path_length": 1,
+              "source_id": "SRC_a8c756bccd424deb94082c6acdaf3f76",
+              "evidence": [],
+              "collision": [
+                true,
+                {
+                  "collision": false,
+                  "decision": "not_applicable"
+                }
+              ],
+              "all_seed_alias_checks": [
+                {
+                  "alias": "Corporate Restructuring Advisor",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Investment Bank",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Lazard Restructuring Advisory Group",
+                  "matches_query": [
+                    1,
+                    "partial_multi_token"
+                  ],
+                  "in_source": null
+                },
+                {
+                  "alias": "Managing Director",
+                  "matches_query": null,
+                  "in_source": [
+                    20,
+                    37
+                  ]
+                },
+                {
+                  "alias": "Sixteen Years Experience",
+                  "matches_query": null,
+                  "in_source": null
+                },
+                {
+                  "alias": "Victoria Huang",
+                  "matches_query": null,
+                  "in_source": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            }
+          ],
+          "unweighted_top3": true
+        }
+      ],
+      "gold": [
+        "SRC_a8c756bccd424deb94082c6acdaf3f76"
+      ],
+      "outcomes": {
+        "bm25_v1": {
+          "ranked_source_ids": [
+            "SRC_a8c756bccd424deb94082c6acdaf3f76",
+            "SRC_7ec60d6b0cec447fa0ee0dbbf6fb386f",
+            "SRC_19d8b205b26b4f32a7345cfbff2497b3"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 0
+        },
+        "minilm_vector_v1": {
+          "ranked_source_ids": [
+            "SRC_a8c756bccd424deb94082c6acdaf3f76",
+            "SRC_304ee01504be4eb996f90325fd41b0ed",
+            "SRC_a708b816d69f4c9b94fae6fb6e9c8c5d"
+          ],
+          "tp": 1,
+          "fp": 2,
+          "fn": 0
+        },
+        "unweighted_graph_v1": {
+          "ranked_source_ids": [
+            "SRC_a8c756bccd424deb94082c6acdaf3f76"
+          ],
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "provenance_graph_v1": {
+          "ranked_source_ids": [],
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      }
+    }
+  ],
+  "fn_partition": [
+    {
+      "query_id": "Q005",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q005",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_07d47bea6aab444da70c50c215cf1e4e",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q005",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q005",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_07d47bea6aab444da70c50c215cf1e4e",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q006",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_05424f4340bd4183b43e9b0526e2a595",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q006",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q006",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_67fcc1ef6eaa4d7faf93e8b31f914bab",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q006",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_05424f4340bd4183b43e9b0526e2a595",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q006",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q006",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_67fcc1ef6eaa4d7faf93e8b31f914bab",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q007",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q007",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_cbf9e213476b4447a62ec10998109cd0",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q007",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+      "first_failed_stage": "provenance_excluded"
+    },
+    {
+      "query_id": "Q007",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_cbf9e213476b4447a62ec10998109cd0",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q008",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_05c73e6a1a964f5bac6d06fdd4468454",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q008",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q008",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_e49f23a212284b8fad2b8f1a4a84341d",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q008",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_05c73e6a1a964f5bac6d06fdd4468454",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q008",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q008",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_e49f23a212284b8fad2b8f1a4a84341d",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q009",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_ca382c534abf423ba1926acd4f02191e",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q009",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_f5c42c43daaf4f36ad61277877289e94",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q009",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_b0b29907d30d405bbd3fdc6c785fec65",
+      "first_failed_stage": "provenance_excluded"
+    },
+    {
+      "query_id": "Q009",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_ca382c534abf423ba1926acd4f02191e",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q009",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_f5c42c43daaf4f36ad61277877289e94",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q010",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_19d8b205b26b4f32a7345cfbff2497b3",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q010",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_3eb47f960df3449dbbe351b22974189b",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q010",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_19d8b205b26b4f32a7345cfbff2497b3",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q010",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_3eb47f960df3449dbbe351b22974189b",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q011",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q011",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_1e85ef4a27624583b2bbed5203988083",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q011",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_06bb790e8ccb4aa288baa0a74279a9cd",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q011",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_1e85ef4a27624583b2bbed5203988083",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q012",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_7d71e393a7e045b99266d9b05b499cb3",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q012",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_8170175835fa4ff2bce4dae447fb7688",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q012",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_e8dc328363f34b5f9187ffff3c41f8e4",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q012",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_7d71e393a7e045b99266d9b05b499cb3",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q012",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_8170175835fa4ff2bce4dae447fb7688",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q012",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_e8dc328363f34b5f9187ffff3c41f8e4",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q013",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_c3fbaa96683241b682a24f996cd2841f",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q013",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_f5c42c43daaf4f36ad61277877289e94",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q013",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_fe56228c8f38461b96964e6e5303294b",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q013",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_c3fbaa96683241b682a24f996cd2841f",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q013",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_f5c42c43daaf4f36ad61277877289e94",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q013",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_fe56228c8f38461b96964e6e5303294b",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q014",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_2f3c6a1b3c25481a8a6ee604ec4ef9b5",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q014",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q014",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_f3557925ad8347df8aea6f4b0fe3736b",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q014",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_2f3c6a1b3c25481a8a6ee604ec4ef9b5",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q014",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_b4afb6b3a6dc49408f204f940ec09a27",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q014",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_f3557925ad8347df8aea6f4b0fe3736b",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q015",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_e7fc70d2108f48148e5f9706036c0d54",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q015",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_e7fc70d2108f48148e5f9706036c0d54",
+      "first_failed_stage": "provenance_excluded"
+    },
+    {
+      "query_id": "Q016",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_a6589a466a6f4705a731aca66e7062f5",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q016",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_f3170dc618be459aa194ccad5623ba6c",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q016",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_3901afe8826243ab985f340222cb3199",
+      "first_failed_stage": "provenance_excluded"
+    },
+    {
+      "query_id": "Q016",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_a6589a466a6f4705a731aca66e7062f5",
+      "first_failed_stage": "provenance_excluded"
+    },
+    {
+      "query_id": "Q017",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_b940430c90694a15b8d27ebc539db542",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q017",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q017",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_fd700683d4cb4511aec4a0b3f4752e22",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q017",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_b940430c90694a15b8d27ebc539db542",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q017",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_d94ae1c2c8e241cd9e0209b0859a15f6",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q017",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_fd700683d4cb4511aec4a0b3f4752e22",
+      "first_failed_stage": "zero_seed"
+    },
+    {
+      "query_id": "Q018",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_92dc2051603a4df184489acc53b75958",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q018",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_92dc2051603a4df184489acc53b75958",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q019",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_3ac471dea79b40518de8e10ff9121d44",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q019",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_c3f817b46752487499f5cbc776601946",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q019",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_3ac471dea79b40518de8e10ff9121d44",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q019",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_c3f817b46752487499f5cbc776601946",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q020",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_6e88f96639d441a5a3cbbdce2ae2ccab",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q020",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_ed547720efc542e09abb139fcb3e0d12",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q020",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_6e88f96639d441a5a3cbbdce2ae2ccab",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q020",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_ed547720efc542e09abb139fcb3e0d12",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q021",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_2b70735578ff431ca60183fe32cb12a8",
+      "first_failed_stage": "provenance_excluded"
+    },
+    {
+      "query_id": "Q022",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_304ee01504be4eb996f90325fd41b0ed",
+      "first_failed_stage": "rank_below_top3"
+    },
+    {
+      "query_id": "Q023",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_a8c756bccd424deb94082c6acdaf3f76",
+      "first_failed_stage": "provenance_excluded"
+    },
+    {
+      "query_id": "Q025",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_85008339e41847d38d3bbcbcdaa743d9",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q025",
+      "implementation_id": "unweighted_graph_v1",
+      "source_id": "SRC_974522db6083405890401ee0820699b7",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q025",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_85008339e41847d38d3bbcbcdaa743d9",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    },
+    {
+      "query_id": "Q025",
+      "implementation_id": "provenance_graph_v1",
+      "source_id": "SRC_974522db6083405890401ee0820699b7",
+      "first_failed_stage": "not_reachable_within_2_hops"
+    }
+  ]
+}
